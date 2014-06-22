@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingRight="20dp"
+        android:paddingTop="40dp" >
+
+        <ImageView
+            android:id="@+id/imgCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/product_full_close2x" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.hitechno.sogoods.views.TouchImageView
+            android:id="@+id/imagePopupProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_product_no_picture" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/textViewNamePro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                sogoods:typeface="futura_std_medium" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/textViewAddBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNamePro"
+                android:text="@string/added_by"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/txtcontentpro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout1"
+            android:layout_marginBottom="53dp"
+            android:layout_toLeftOf="@+id/progressBar1"
+            android:gravity="center"
+            android:textColor="@color/gold_color" />
+    </RelativeLayout>
+
+</LinearLayout>

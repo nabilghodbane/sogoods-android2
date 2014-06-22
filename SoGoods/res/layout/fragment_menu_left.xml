@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1" >
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <SearchView
+            android:id="@+id/searchmenuProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_search"
+            android:cursorVisible="true"
+            android:hint="@string/search"
+            android:textCursorDrawable="@drawable/cursor_drawable" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/imageusname"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/textUsname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageusname"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            sogoods:typeface="futura_std_medium" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menuleft_add_layout"
+        android:layout_below="@+id/relUsername"
+        android:background="@drawable/border_scroll"
+        android:isScrollContainer="true"
+        android:overScrollMode="always"
+        android:scrollbars="vertical" >
+
+        <include
+            android:id="@+id/pager_with_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_menuleft_list_content" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/menuleft_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/leftmenu_layout_addproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu1" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/imageAddProduct"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/icon_plus"
+                android:contentDescription="@string/app_name"
+                android:gravity="center_vertical"
+                sogoods:typeface="futura_std_medium" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/txtaddproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageAddProduct"
+                android:text="@string/addProduct"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/leftmenu_layout_addbrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu2" >
+
+            <ImageView
+                android:id="@+id/imageAddBrand"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/icon_plus"
+                android:contentDescription="@string/app_name"
+                android:gravity="center_vertical" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/txtaddbrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imageAddBrand"
+                android:text="@string/addBrand"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/menuleft_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_search_menu" />
+
+        <ProgressBar
+            android:id="@+id/menuleft_search_progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shadow_namebackground"
+        android:rotation="180" />
+
+</RelativeLayout>

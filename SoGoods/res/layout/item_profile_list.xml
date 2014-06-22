@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:id="@+id/profile_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_nopicture_100" />
+
+        <LinearLayout
+            android:id="@+id/item_members_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_members_follow_button"
+            android:layout_toRightOf="@+id/profile_image"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/usname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp"
+                sogoods:typeface="futura_std_bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_locator"
+                    android:contentDescription="@string/app_name" />
+
+                <com.hitechno.sogoods.views.FuturaTextView
+                    android:id="@+id/item_members_location_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/light_gray2"
+                    android:textSize="16sp"
+                    sogoods:typeface="futura_std_book" />
+            </LinearLayout>
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/txtPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="@color/light_gray2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                sogoods:typeface="futura_std_book" />
+        </LinearLayout>
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/item_members_follow_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_members_header_layout"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_unfollow"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            sogoods:typeface="futura_std_book" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/like_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/light_gray2"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                sogoods:typeface="futura_std_medium" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/icon_like"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/item_member_follower_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/light_gray2"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            sogoods:typeface="futura_std_medium" />
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/item_member_following_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/light_gray2"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            sogoods:typeface="futura_std_medium" />
+    </LinearLayout>
+
+</LinearLayout>

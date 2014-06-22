@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup android:id="@+id/products_filter"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button android:id="@+id/new_products_button"
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/new_filter"
+			android:onClick="onProductFilterClicked"/>
+		<Button android:id="@+id/suggested_products_button"
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/suggested"
+			android:onClick="onProductFilterClicked"/>
+		<Button android:id="@+id/popular_products_button"
+			android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/popular"
+			android:onClick="onProductFilterClicked"/>
+	</RadioGroup>
+	
+    <GridView android:id="@+id/advertisements_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+		android:orientation="horizontal"
+		android:layout_below="@id/products_filter"/>
+    
+    <LinearLayout android:id="@+id/advertisement_fragment"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+		android:layout_below="@id/products_filter"/>
+    
+</RelativeLayout>

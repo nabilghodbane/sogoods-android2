@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="soGoods">So Goods</string>
+
+    <!-- misc -->
+    <string name="brand">品牌</string>
+    <string name="shop">店铺</string>
+    <string name="shops">店铺</string>
+    <string name="brands">品牌</string>
+    <string name="users">会员</string>
+    <string name="product">产品</string>
+    <string name="close">关闭</string>
+    <!-- "noResult"                          =   "No result.</string> -->
+    <string name="noResultForSearch">没有与搜索条件匹配的项.</string>
+    <string name="noContent">此页面还没有内容.</string>
+    <string name="noComment">还没有评论。你可以发第一个评论！</string>
+    <string name="error">错误</string>
+
+    <!-- //Login related -->
+    <string name="demoTitle">示范</string>
+    <string name="email">电子邮件</string>
+    <string name="yourEmail">Your email address :</string>
+    <string name="password">密码</string>
+    <string name="signUp">注册</string>
+    <string name="logIn">登录</string>
+    <string name="signUpViaFacebook">注册facebook</string>
+    <string name="validateTitle">确认</string>
+    <string name="confirmPassword">确认密码</string>
+    <string name="confirmPass">确认密码</string>
+    <string name="Connection">连接</string>
+    <string name="enterUsernameOrPassword">请输入用户名或密码</string>
+    <string name="OK">Ok</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="or">或</string>
+    <string name="emailNotCorrect">您的电子邮件不正确</string>
+    <string name="PasswordsNotIdentical">输入密码错误</string>
+    <string name="disconnected">注销</string>
+    <string name="expired_session">您的登录时间已到期，请重新登录</string>
+    <string name="lost_connection">Internet连接已失去了.</string>
+    <string name="email_used">该会电子邮件已被使用</string>
+    <string name="resetPasswordMessage">Password will be sent to your email</string>
+    <string name="sendNewPassword">You’ll receive an email from Sogoods to get your log in and password back</string>
+
+    <!-- //Home related -->
+    <string name="home">主页</string>
+    <string name="profile">我的个人资料</string>
+    <string name="notification_zone">通告区</string>
+    <string name="notifications">通告</string>
+    <string name="pull_down_refresh">发布更新</string>
+    <string name="refreshing">更新...</string>
+    <string name="release_refresh">发布刷新</string>
+    <string name="last_update">上次更新: </string>
+    <!-- //"findBrandOrProDuct"                =   "Brand, product, member, shop</string> -->
+    <string name="findBrandOrProDuct">寻找品牌，产品</string>
+    <string name="findBrandProductMember">寻找信息</string>
+    <string name="findCity">寻找一个城市</string>
+    <string name="homeCategories">类别</string>
+    <string name="newMembers">新成员</string>
+    <string name="newProducts">新产品</string>
+    <string name="advertisement">广告</string>
+    <string name="myEvents">时事</string>
+    <string name="allEvents">所有时事</string>
+    <!-- //"no_news"                           =   "There is no news corresponding to your lifestyle</string> -->
+    <string name="no_news">没有找到与你的lifestyle相关的信息"</string>
+    <!-- //"no_news_brand"                     =   "There is no news about this brand</string> -->
+    <string name="no_news_brand">没有找到与品牌相关的信息</string>
+    <string name="old_notifs">旧的通知</string>
+    <string name="new_notifs">新的通知</string>
+    <string name="more_news">更多信息</string>
+    <string name="suggested">推荐</string>
+    <string name="new_products">新的产品</string>
+    <string name="popular">热门</string>
+    <string name="homeSettings">设置</string>
+    <string name="options">选定</string>
+    <string name="allCategories">所有类别</string>
+    <string name="allBrands">所有牌子</string>
+    <string name="brandsAvailable">%i个牌子</string>
+    <string name="brandAvailable">%i个牌子</string>
+    <string name="concierge">邮箱</string>
+    <string name="timetable">营业时间</string>
+    <string name="filter">过滤</string>
+    <string name="notice">通知</string>
+    <string name="no_product_for_search">没有与搜索条件匹配的产品.</string>
+    <string name="newsSearchList">信息搜索列表</string>
+    <string name="createNewAccount">you want to create an account?</string>
+    <string name="forgotPassword">you having difficulties logging in?</string>
+    <string name="forgotPassMes">Forgot your log in or password?</string>
+
+    <!-- // Pop up related -->
+    <string name="photoGallery">图片</string>
+    <string name="gallery">图库</string>
+    <string name="personalInfo">个人信息</string>
+    <string name="addBrand">添加一个品牌</string>
+    <string name="disconnect">注销</string>
+    <string name="confirm_disconnection">您将注销您的账户</string>
+    <string name="post">公布</string>
+
+    <!-- // Brand related -->
+    <string name="viewFans">查看粉丝</string>
+    <string name="become_fan">粉丝</string>
+    <string name="already_fan">已粉丝</string>
+    <string name="stopFan">停止成为风扇</string>
+    <string name="selectBrand">选择一个品牌</string>
+    <string name="selectBrandOf">选择一个品牌%@</string>
+
+    <!-- Shop related -->
+    <string name="products">产品</string>
+    <string name="catalog">目录</string>
+    <string name="catalogs">"目录</string>
+    <string name="news">时事</string>
+    <string name="photos">图片</string>
+    <string name="mail_shop">发电子邮件给店家</string>
+    <string name="share_shop">共享店家</string>
+    <string name="share_mail">用邮件分享</string>
+    <string name="share_msg">用消息分享</string>
+    <string name="searching_shops">寻找店铺...</string>
+    <string name="configure_mail">请先在你使用的设备内设置你的电子邮件</string>
+    <string name="configure_message">请先在你使用的设备内设置你的留言</string>
+    <string name="your_location">你的方位</string>
+    <string name="not_found">没有找到</string>
+    <string name="location_not_found">没有找到方位</string>
+
+    <!-- //Profile related -->
+    <string name="so">SO</string>
+    <string name="so_s">SO</string>
+    <string name="other_so">%i+ 别的SO</string>
+    <string name="n_so">%i SO</string>
+    <string name="like">关注</string>
+    <string name="like_s">Like</string>
+    <string name="like_gs">关注</string>
+    <string name="comment">评论</string>
+    <string name="follower">Follower</string>
+    <string name="follower_s">订阅用户</string>
+    <string name="following">订阅</string>
+    <string name="following_s">Followings</string>
+    <string name="fan_s">粉丝</string>
+    <string name="fan">粉丝</string>
+    <string name="followers_nb">订阅用户</string>
+    <string name="following_nb">订阅</string>
+    <string name="likes_nb">喜欢</string>
+    <string name="fan_nb">粉丝</string>
+    <string name="my_own_profile">我的个人资料</string>
+    <string name="my_profile">简介版</string>
+    <string name="create_profile">创建简介</string>
+    <string name="my_diary">我的日记</string>
+    <string name="editProfile">修改个人资料</string>
+    <string name="toSave">保存</string>
+    <string name="photo">照片</string>
+    <string name="next">下一页</string>
+    <string name="addProduct">+ 添加一个产品</string>
+    <string name="addProductNavBar">添加一个产品</string>
+    <string name="profileNiv">您的个人资料的完整度</string>
+    <string name="completeProfile">请填写您的个人资料</string>
+    <string name="confiramtionPassNotCorrect">您的确认密码不正确</string>
+    <string name="viewAlbum">查看相册</string>
+    <string name="follow">遵循</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="affinity">亲和力</string>
+    <string name="subscribe">关注</string>
+    <string name="subscribed">关注了</string>
+    <string name="loadMore">装入更多</string>
+    <string name="fieldsNotFilled">所有项包括头像是必须的</string>
+    <string name="firstname">名字 (2 个到 15 字符)</string>
+    <string name="lastname">姓 (2 个到 15 字符)</string>
+    <string name="pseudo">昵称 (4 个到 15 字符)</string>
+    <string name="firstNameValidation">名字 2个 到 15字符</string>
+    <string name="lastNameValidation">姓名 2个 到 15字符</string>
+    <string name="pseudoValidation">昵称 4 个到 15 字符</string>
+    <string name="alphabetOnlyFistName">只的名字必須是字母或字符</string>
+    <string name="alphabetOnlyLastName">姓氏必須是字母或字符</string>
+    <string name="minimumPassword">密码必須使用最少4个字符</string>
+    <string name="user">用户名</string>
+    <string name="birthdate">出生日期</string>
+    <string name="sex">性别</string>
+    <string name="miss">小姐</string>
+    <string name="madam">女士</string>
+    <string name="mister">先生</string>
+    <string name="activity">职业</string>
+    <string name="cityOrCountry">国家或城市</string>
+    <string name="updateSucceed">更新成功</string>
+    <string name="updateFailed">更新失败，请重试</string>
+    <string name="facebook_share_sentence">尝试应用 SoGoods - Get Inspired</string>
+    <string name="elapsed_seconds"> 秒前</string>
+    <string name="elapsed_minutes"> 分钟前</string>
+    <string name="elapsed_hours"> 分钟前</string>
+    <string name="elapsed_days"> 天前</string>
+    <string name="elapsed_weeks"> 个星期前</string>
+    <string name="elapsed_months"> 个月前</string>
+    <string name="elapsed_years"> 年前</string>
+    <string name="years"> 年</string>
+    <string name="move_picture_large">把您的照片放在框内作为您的头像图片</string>
+    <string name="move_picture_small">移动您的照片至框内作为您的评论头像</string>
+    <string name="your_large_picture">您的头像照片</string>
+    <string name="your_small_picture">您评论时的迷你头像</string>
+    <string name="no_followers">您目前还没有追随者</string>
+    <string name="profile_preview">您个人资料的预览</string>
+    <string name="city_search_placeholder">请输入城市的名称</string>
+    <string name="suggested_no_following">您还没有任何订阅，点击这里查找.</string>
+    <string name="suggested_no_follower">您还没有任何追随者.</string>
+    <string name="suggested_no_like">您还没任何喜欢的产品. 点击此处添加一些.</string>
+    <string name="suggested_no_fan">您还没有添加任何喜爱的品牌. 点击此处添加一些.</string>
+    <string name="no_picture_yet">会员还没有加照片.</string>
+    <string name="spread_application">宣传应用程序</string>
+    <string name="addPhotoGallery">添加照片库</string>
+    <string name="selectPhoto">选择一张照片</string>
+    <string name="setSquardImage">请选择图片</string>
+    <string name="setProfileImage">个人照片</string>
+    <string name="largImageProfile">大个人照片</string>
+    <string name="squareImageProfile">正方形个人照片</string>
+    <string name="showRealName">显示真实姓名</string>
+  <string name="showBirthday">Afficher le date de naissance</string>
+    <!-- //Product related -->
+
+    <string name="likeTypeDream">我的夢想</string>
+    <string name="likeTypeNext">下次购买</string>
+    <string name="likeTypeOwned">我已经有</string>
+    <string name="likeTypeLike">我喜歡</string>
+    <string name="I_DREAM">我的夢想</string>
+    <string name="GOT_IT">下次购买</string>
+    <string name="NEXT_BUY">我已经有</string>
+    <string name="LIKE_IT">我喜歡</string>
+    <string name="report_abuse">举报</string>
+    <string name="report_successful">谢谢你的举报</string>
+    <string name="report_failed">举报失败,请重新尝试</string>
+    <string name="initialComment">评论 ... </string>
+    <string name="initialMessageRepport">举报</string>
+    <string name="searchViaGoogle">通过Google查找</string>
+    <string name="use">用</string>
+    <string name="publish">发布</string>
+    <string name="veuillezRemplirLesDeuxChamps">请填写这两项</string>
+    <string name="veuillezChoisirUnePhoto">请选择一张照片</string>
+    <string name="veuillezChoisirUneCategorie">请选择一个类别</string>
+    <string name="veuillezChoisirUneMarque">请选择一个牌子</string>
+    <string name="veuillezChoisirUnNomDeProduit">请选择一个产品的名字</string>
+    <string name="product_name_brand">产品名字和品牌</string>
+    <string name="product_from_brand">从 </string>
+    <string name="added_by">加上的</string>
+    <string name="added_by_on">添加 %@ 上 </string>
+    <string name="added_success">您的产品创造成功了。</string>
+    <string name="productInBrand">产品</string>
+    <string name="likeList">’s like list</string>
+
+    <!-- // comoment related -->
+    <string name="updateComment">更新评论</string>
+    <string name="putComment">在这里将您的评论!</string>
+
+    <!-- //Category related -->
+    <string name="aroundMe">附近</string>
+    <string name="elsewhere">其它地方</string>
+
+    <!-- //Brand related -->
+    <string name="list">  清单</string>
+    <string name="map">  地图</string>
+    <string name="searchBrand">搜索一个品牌</string>
+    <string name="requestedLocation">所需的方位</string>
+    <string name="tradeShop">官方店铺</string>
+    <string name="retailerShop">零售商</string>
+    <string name="resultsInRadius">在 %d 公里范围内</string>
+    <string name="searchBrandLike">选择一个品牌，你想成为粉丝</string>
+    <string name="chooseBrands">选择你喜欢的品牌</string>
+    <string name="noShopResult">There’s no any shop nears you</string>
+    <string name="brandAdded">New brand added successfully to your Fans list.</string>
+
+    <!-- // Add product -->
+    <string name="selectTheProductCategory">选择产品类别</string>
+    <string name="createProduct">创建</string>
+    <string name="productName">产品名称</string>
+    <!-- //added by Huu Nam -->
+    <string name="productDes">产品介绍</string>
+    <!-- // -->
+    <string name="brandName">品牌</string>
+    <string name="categoryTitle">类别</string>
+    <string name="veuillezLaisserUnCommentaire">评论</string>
+    <string name="categoryNotMatchingBrand">没有与品牌匹配的项.</string>
+    <string name="selectPhoto">选择一张照片</string>
+    <string name="editPhotoProduct">修改照片</string>
+
+    <!-- //MISC -->
+    <string name="cancel">取消</string>
+    <string name="menu">菜单</string>
+    <string name="back">上一页</string>
+    <string name="noResult">没有结果</string>
+    <string name="noSearchingResult">您的搜索没有任何结果</string>
+    <string name="notFound">Not found</string>
+
+    <!-- // Quiz Page -->
+    <!-- //"questionTest"                      =   "Vos vacances sont plutôt: -->
+    <string name="questionTest">你的假期是相当:</string>
+    <!-- // QuizResult Page -->
+    <!-- //"thanksForParticipation"            =   "Merci pour votre participation \n Vous avez le même lifestyle que %d members</string> -->
+    <!-- //"thanksForParticipation"            =   "Thanks for your participation \n x% of members share your lifestyle</string> -->
+    <string name="thanksForParticipation">感谢您的参与 \n 您和 %d 个会员有同样的生活方式</string>
+    <string name="myQuizz">我QUIZZ</string>
+    <string name="startQuizz">开始QUIZZ</string>
+    <string name="next">跳躍  > </string>
+    <string name="skipQuizz">跳过  </string>
+    <string name="numberLabel">您刚才所选择的%i个品牌</string>
+    <string name="numberLabels">You selected %i brands</string>
+    <string name="errorQuizz">Internet连接出错, 我们稍候会提醒您参加QUIZZ</string>
+    <string name="errorConnect">链接错误</string>
+    <string name="finish">完</string>
+    <string name="quizzAgain">你没玩测验。你要考？</string>
+    <string name="didChooseAnswer">你没有选择任何答案</string>
+    <string name="forgetAnswer">你必須回答問題 %i</string>
+
+    <!-- // Camera -->
+    <string name="takePicture">拍照片</string>
+    <string name="choosePicture">请选择一张照片</string>
+    <string name="select">选择</string>
+    <string name="skip">跳跃 >></string>
+    <string name="cancel">取消</string>
+
+    <!-- // Gallery Photo Page -->
+    <string name="edition">编辑</string>
+    <string name="delete">删除</string>
+    <!-- //"addPicture"                        =   "+ Add a picture -->
+    <string name="addPicture">+ 添加</string>
+    <string name="addPictureLine2">一张照片</string>
+    
+    <string name="support">Support</string>
+
+    <!--
+//added by Huu Nam for delete a profile photo in profile
+//added april - 24 -2013
+    -->
+    <string name="added_new_comment">added new comment</string>
+    <string name="followed_you">followed you</string>
+    <string name="added_new_product">added new product</string>
+    <string name="there_is">There is</string>
+    <string name="new_comment_on_your_product">new comment on your product</string>
+    <string name="added_new_picture">added new picture</string>
+    
+    <string name="deleteTitle">问题</string>
+    <string name="deleteQuetstion">您确定要删掉这张照片</string>
+    <string name="storeLocator">Store locator</string>
+    <string name="sport">Sport</string>
+    <string name="stylish">Stylish</string>
+    <string name="designer">Designer</string>
+    <string name="student">Student</string>
+     <string name="select_member">Select the members you want to follow</string>
+     <string name="email_exist">Le serveur indisponible, veuillez réessayer dans un moment</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSogoods</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. Please help me fix this by sending us error data, all you have to do is click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_notif_ticker_text">Unexpected error, please send a report...</string>
+    <string name="crash_notif_title">Feather crashed...</string>
+    <string name="crash_notif_text">Please click here to help fix the issue.</string>
+    <string name="launch_editor">Launch Editor</string>
+    <string name="choose_photo">Choose a Photo</string>
+    <string name="external_storage_na_title">Attention</string>
+    <string name="external_storage_na_message">sdcard is missing or currently not mounted. Cannot continue.</string>
+    <string name="get_mobile_library">Get Android Library</string>
+    <string name="view_documentation">View Documentation</string>
+    <string name="hi_res_service_label">HI-RES Service</string>
+    <string name="crash_toast_text">Ooooops! I crashed, but a report has been sent to my developer to help him fix the issue!</string>
+    <string name="image_details">Image Details</string>
+
+</resources>

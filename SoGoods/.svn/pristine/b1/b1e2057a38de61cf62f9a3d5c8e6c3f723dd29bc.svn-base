@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_follows_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/headerDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar" 
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bttBackDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:src="@drawable/bouton_back2x"
+            android:visibility="visible"
+            android:layout_marginTop="3dp" android:layout_marginBottom="3dp" />
+         <TextView
+            android:id="@+id/lbNameComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gold_color" 
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"  >
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="visible" >
+        </ProgressBar>
+        
+        <TextView
+            android:id="@+id/txtNoResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/suggested_no_follower"
+            android:textColor="@color/brow_color"
+            android:background="@drawable/iconegrise012x" 
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/profile_follows_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/sogoods_neutral_color"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+</LinearLayout>

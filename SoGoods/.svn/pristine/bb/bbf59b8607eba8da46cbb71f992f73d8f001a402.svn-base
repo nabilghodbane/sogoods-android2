@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/item_search_product_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/background_nopicture" />
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/item_search_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/item_search_product_brand"
+        android:layout_toRightOf="@+id/item_search_product_image"
+        android:singleLine="true"
+        android:text="@string/my_profile"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        sogoods:typeface="futura_std_book" />
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/item_search_product_brand"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:text="@string/my_profile"
+        android:textColor="@color/light_gray2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        sogoods:typeface="futura_std_book" />
+
+</RelativeLayout>

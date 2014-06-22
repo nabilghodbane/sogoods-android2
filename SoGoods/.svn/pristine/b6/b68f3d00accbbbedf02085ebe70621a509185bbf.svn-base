@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageCategories"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_storelocator"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageCategories"
+            android:text="@string/storeLocator"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/sogoods_dark_brow_color" />
+
+    <RelativeLayout
+        android:id="@+id/relProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageProducts"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_product"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageProducts"
+            android:text="@string/newProducts"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/sogoods_dark_brow_color" />
+
+    <RelativeLayout
+        android:id="@+id/relMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageMembers"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_member"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageMembers"
+            android:text="@string/newMembers"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/sogoods_dark_brow_color" />
+
+    <RelativeLayout
+        android:id="@+id/relNotifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageNotifi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_notifications"
+            android:contentDescription="@string/app_name" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textNotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageNotifi"
+            android:text="@string/notifications"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/sogoods_dark_brow_color" />
+
+    <RelativeLayout
+        android:id="@+id/menuleft_myaccount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageAcc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_my_account"
+            android:contentDescription="@string/app_name" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textMyAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageAcc"
+            android:text="@string/my_profile"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/sogoods_dark_brow_color" />
+
+    <RelativeLayout
+        android:id="@+id/relSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageSupport"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_support"
+            android:contentDescription="@string/app_name" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageSupport"
+            android:text="@string/support"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/sogoods_dark_brow_color" />
+
+    <RelativeLayout
+        android:id="@+id/relLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageLogout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/icon_logout"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical" />
+
+        <com.hitechno.sogoods.views.CustomFontTextView
+            android:id="@+id/textLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageLogout"
+            android:text="@string/disconnect"
+            android:textColor="@color/sogoods_dark_color"
+            android:textSize="16sp"
+            sogoods:customFont="fonts/HelveticaNeue.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@string/add_products"
+            android:src="@drawable/brand_selection" />
+    </RelativeLayout>
+
+</LinearLayout>

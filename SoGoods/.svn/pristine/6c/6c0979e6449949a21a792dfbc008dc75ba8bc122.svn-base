@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:id="@+id/products_fragment" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<FrameLayout android:id="@+id/pager_with_filter"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		 <RadioGroup android:id="@+id/products_filter"  android:background="@drawable/shadow_namebackground"
+		    android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<com.hitechno.sogoods.views.FuturaButton
+				android:id="@+id/new_products_button" android:layout_width="0dp"
+				android:layout_weight="1" android:text="@string/new_filter"
+				android:onClick="onProductFilterClicked" sogoods:typeface="futura_std_medium"
+				 android:textColor="@color/light_gold_color"/>
+ 		
+			<com.hitechno.sogoods.views.FuturaButton
+				android:id="@+id/suggested_products_button" android:layout_width="0dp"
+				android:layout_weight="1" android:text="@string/suggested"
+				android:onClick="onProductFilterClicked" sogoods:typeface="futura_std_medium"
+				 />
+			<com.hitechno.sogoods.views.FuturaButton
+				android:id="@+id/popular_products_button" android:layout_width="0dp"
+				android:layout_weight="1" android:text="@string/popular"
+				android:onClick="onProductFilterClicked" sogoods:typeface="futura_std_medium"
+				 />
+		</RadioGroup> 
+		<!-- <RadioGroup android:id="@+id/products_filter"
+		    android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" style="@style/ProductsFilterGroup" android:background="@drawable/navbar">
+			<TextView
+				android:id="@+id/new_products_button" android:layout_width="0dp"
+				android:layout_weight="1" android:text="@string/new_filter"
+				android:onClick="onProductFilterClicked" android:textStyle="bold"
+			    android:layout_gravity="center_vertical" android:layout_marginLeft="40dp"
+				style="@style/ProductsFilter" />
+			<TextView
+				android:id="@+id/suggested_products_button" android:layout_width="0dp"
+				android:layout_weight="1" android:text="@string/suggested"
+				android:onClick="onProductFilterClicked" android:textStyle="bold"
+			    android:layout_gravity="center_vertical" android:layout_marginLeft="40dp"
+				style="@style/ProductsFilter" />
+			<TextView
+				android:id="@+id/popular_products_button" android:layout_width="0dp"
+				android:layout_weight="1" android:text="@string/popular"
+				android:onClick="onProductFilterClicked" android:textStyle="bold"
+			    android:layout_gravity="center_vertical" android:layout_marginLeft="40dp"
+				style="@style/ProductsFilter" />
+		</RadioGroup> -->
+		<ImageView android:layout_width="match_parent" android:layout_height="100dp"
+			android:background="@drawable/pager_drop_shadow"/>
+	</FrameLayout>
+
+	<GridView android:id="@+id/products_grid_view"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:layout_below="@id/pager_with_filter"/>
+
+	<LinearLayout android:id="@+id/product_container_fragment"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="vertical" android:layout_below="@id/pager_with_filter" />
+
+</RelativeLayout>

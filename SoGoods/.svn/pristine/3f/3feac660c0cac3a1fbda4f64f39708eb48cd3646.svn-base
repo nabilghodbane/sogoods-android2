@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/item_search_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:text="@string/my_profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        sogoods:typeface="futura_std_book" />
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/item_search_shop_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_search_shop_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:text="@string/my_profile"
+        android:textColor="@color/light_gray2"
+        sogoods:typeface="futura_std_book" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_search_shop_address"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/item_search_shop_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_search_shop_icon_distance"
+            android:singleLine="true"
+            android:text="@string/my_profile"
+            android:textColor="@color/light_gray2"
+            sogoods:typeface="futura_std_book" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/item_search_shop_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="@string/my_profile"
+            android:textColor="@color/light_gray2"
+            sogoods:typeface="futura_std_book" />
+
+        <ImageView
+            android:id="@+id/item_search_shop_icon_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/item_search_shop_distance"
+            android:background="@drawable/icon_locator"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+</RelativeLayout>

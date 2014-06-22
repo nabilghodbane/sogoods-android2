@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/brand_stores_fragment" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:orientation="vertical">
+
+	<ToggleButton android:id="@+id/list_or_map_toggle"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:textOff="@string/show_map" android:textOn="@string/show_list"
+		android:onClick="onToggleButtonClicked" />
+
+	<LinearLayout android:id="@+id/brand_stores_list_map_container"
+        android:layout_width="match_parent" android:layout_height="match_parent" 
+        android:orientation="vertical"/>
+</LinearLayout>

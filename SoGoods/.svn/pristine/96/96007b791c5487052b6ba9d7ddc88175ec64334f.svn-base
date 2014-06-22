@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:src="@drawable/brands_loading_image2x" 
+            />
+
+        <TextView
+            android:id="@+id/valBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgBrand"
+            android:text="TextView"
+            android:textColor="@color/gold_color" />
+
+        <Button
+            android:id="@+id/bttBecomfan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBrand"
+             android:layout_alignBottom="@+id/imgBrand"
+            android:background="@drawable/add_product_switch"
+            android:text="@string/become_fan"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imgValidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bttBecomfan"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/bttBecomfan"
+            android:src="@drawable/login_check"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

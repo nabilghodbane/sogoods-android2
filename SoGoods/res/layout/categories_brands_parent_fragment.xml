@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categories_brands_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:background="@drawable/search_bar" >
+
+        <SearchView
+            android:id="@+id/searchCategories"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_field" >
+        </SearchView>
+    </RelativeLayout> -->
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/search_bar" >
+
+        <EditText
+            android:id="@+id/searchCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/search_field"
+            android:paddingLeft="30dp"
+            android:paddingRight="42dp"
+            android:singleLine="true" 
+            android:focusable="false"
+            android:hint="@string/findBrandOrProDuct"/>
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/searchCategories"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/search_glass" />
+
+        <ImageView
+            android:id="@+id/imageViewCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/searchCategories"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/bouton_quitter2x"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/categories_brands"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.hitechno.sogoods.fragments.CategoriesFragment" />
+
+        <fragment
+            android:id="@+id/brands"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.hitechno.sogoods.fragments.BrandsFragment" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/brand_search_container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+    <!-- android:layout_below="@id/categories_brands_parent" -->
+
+</RelativeLayout>

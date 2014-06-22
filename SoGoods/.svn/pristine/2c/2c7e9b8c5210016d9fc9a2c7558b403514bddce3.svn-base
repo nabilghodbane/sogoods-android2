@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="soGoods">So Goods</string>
+
+    <!-- misc -->
+    <string name="brand">Marque</string>
+    <string name="shop">Boutique</string>
+    <string name="shops">Boutiques</string>
+    <string name="brands">Marques</string>
+    <string name="users">Membres</string>
+    <string name="product">Produit</string>
+    <string name="close">Fermer</string>
+    <!-- "noResult"                          =   "No result.</string> -->
+    <string name="noResultForSearch">Aucun résultat ne correspond à votre recherche.</string>
+    <string name="noContent">Aucun contenu pour cette section pour le moment.</string>
+    <string name="noComment">Aucun commentaire actuellement. Donnez votre avis en premier !</string>
+    <string name="error">Erreur</string>
+
+    <!-- //Login related -->
+    <string name="demoTitle">Demo</string>
+    <string name="email">Email</string>
+    <string name="yourEmail">Votre email : </string>
+    <string name="password">Mot de passe</string>
+    <string name="signUp">S’inscrire</string>
+    <string name="logIn">Se connecter</string>
+    <string name="signUpViaFacebook">S’inscrire avec Facebook</string>
+    <string name="validateTitle">Valider</string>
+    <string name="confirmPassword">Veuillez confirmer votre mot de passe.</string>
+    <string name="confirmPass">Confirmation mot de passe</string>
+    <string name="Connection">Connexion</string>
+    <string name="enterUsernameOrPassword">Entrez un identifiant et un mot de passe.</string>
+    <string name="OK">Ok</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="or">ou</string>
+    <string name="emailNotCorrect">Le format de votre email n’est pas correct.</string>
+    <string name="PasswordsNotIdentical">Les mots de passe ne sont pas identiques.</string>
+    <string name="disconnected">Déconnexion</string>
+    <string name="expired_session">Votre session a expiré.</string>
+    <string name="lost_connection">Pas de connexion Internet.</string>
+    <string name="email_used">Adresse email déjà utilisée</string>
+    <string name="resetPasswordMessage">Votre mot de passe vous sera envoyé par email</string>
+    <string name="sendNewPassword">Vous allez recevoir un e-mail de Sogoods pour récupérer votre mot de passe et votre identifiant.</string>
+
+    <!-- //Home related -->
+    <string name="home">Accueil</string>
+    <string name="profile">Profil</string>
+    <string name="notification_zone">Espace de notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="pull_down_refresh">Tirez pour rafraîchir</string>
+    <string name="refreshing">Mise à jour#8230;</string>
+    <string name="release_refresh">Lâchez pour rafraichir</string>
+    <string name="last_update">Dernière MàJ : </string>
+    <!-- //"findBrandOrProDuct"                =   "Brand, product, member, shop</string> -->
+    <string name="findBrandOrProDuct">Rechercher</string>
+    <string name="findBrandProductMember">Recherche dans les actualités</string>
+    <string name="findCity">Rechercher une ville</string>
+    <string name="homeCategories">Catégories</string>
+    <string name="newMembers">Membres</string>
+    <string name="newProducts">Produits</string>
+    <string name="advertisement">Espace publicitaire</string>
+    <string name="myEvents">Mes actualités</string>
+    <string name="allEvents">Toutes les actualités</string>
+    <!-- //"no_news"                           =   "There is no news corresponding to your lifestyle</string> -->
+    <string name="no_news">Pas d’actualité correspondant à votre lifestyle</string>
+    <!-- //"no_news_brand"                     =   "There is no news about this brand</string> -->
+    <string name="no_news_brand">Pas d’actualité récente pour cette marque</string>
+    <string name="old_notifs">Anciennes notifications</string>
+    <string name="new_notifs">Nouvelles notifications</string>
+    <string name="more_news">Plus d’actualités</string>
+    <string name="suggested">Suggérés</string>
+    <string name="new_products">Nouveaux</string>
+    <string name="popular">Populaires</string>
+    <string name="homeSettings">Paramètres</string>
+    <string name="options">Options</string>
+    <string name="allCategories">Toutes catégories</string>
+    <string name="allBrands">Toutes marques</string>
+    <string name="brandsAvailable">%i marques disponibles</string>
+    <string name="brandAvailable">%i marque disponible</string>
+    <string name="concierge">Conciergerie</string>
+    <string name="timetable">Horaires</string>
+    <string name="filter">Filtrer</string>
+    <string name="notice">Notification</string>
+    <string name="no_product_for_search">Pas de produits disponibles pour la recherche actuelle.</string>
+    <string name="newsSearchList">Nouvelles liste de recherche</string>
+    <string name="createNewAccount">Vous n’arrivez pas à vous identifier ?</string>
+    <string name="forgotPassword">Vous souhaitez créer un compte ?</string>
+    <string name="forgotPassMes">Vous avez oublié votre mot de passe ou votre identifiant ?</string>
+
+    <!-- // Pop up related -->
+    <string name="photoGallery">Galerie photos</string>
+    <string name="gallery">Galerie</string>
+    <string name="personalInfo">Mon compte</string>
+    <string name="addBrand">Ajouter marques</string>
+    <string name="disconnect">Déconnexion</string>
+    <string name="confirm_disconnection">Etes vous sûr de vouloir vous déconnecter ?</string>
+    <string name="post">Publier</string>
+
+    <!-- // Brand related -->
+    <string name="viewFans">Voir les fans</string>
+    <string name="become_fan">Devenir fan</string>
+    <string name="already_fan">Déjà fan</string>
+    <string name="stopFan">Ne plus être fan</string>
+    <string name="selectBrand">Choisir une marque</string>
+    <string name="selectBrandOf">Choisir une marque de </string>
+
+    <!-- Shop related -->
+    <string name="products">Produits</string>
+    <string name="catalog">Catalogue</string>
+    <string name="catalogs">"Catalogues</string>
+    <string name="news">Actualités</string>
+    <string name="photos">Photos</string>
+    <string name="mail_shop">Email à la boutique</string>
+    <string name="share_shop">Partage</string>
+    <string name="share_mail">Partager par Email</string>
+    <string name="share_msg">Partager par message</string>
+    <string name="searching_shops">Recherche de boutiques#8230;</string>
+    <string name="configure_mail">Veuillez configurer votre adresse email dans les réglages de votre appareil</string>
+    <string name="configure_message">Veuillez configurer Messages dans les réglages de votre appareil</string>
+    <string name="your_location">Votre localisation</string>
+    <string name="not_found">Non trouvé</string>
+    <string name="location_not_found">Lieu non trouvé</string>
+
+    <!-- //Profile related -->
+    <string name="so">SO</string>
+    <string name="so_s">SO</string>
+    <string name="other_so">%i+ autres SO</string>
+    <string name="n_so">%i SO</string>
+    <string name="like">LIKES</string>
+    <string name="like_s">Like</string>
+    <string name="like_gs">Like</string>
+    <string name="comment">Commenter</string>
+    <string name="follower">Abonné</string>
+    <string name="follower_s">Abonnés</string>
+    <string name="following">Abonnement</string>
+    <string name="following_s">Abonnements</string>
+    <string name="fan_s">Fans</string>
+    <string name="fan">Fan</string>
+    <string name="followers_nb">Abonnés</string>
+    <string name="following_nb">Abonnements</string>
+    <string name="likes_nb">Likes</string>
+    <string name="fan_nb">Fan</string>
+    <string name="my_own_profile">Mon profil</string>
+    <string name="my_profile">MON COMPTE</string>
+    <string name="create_profile">Création d’un profil</string>
+    <string name="my_diary">Mon journal</string>
+    <string name="editProfile">Editer mon profil</string>
+    <string name="toSave">Enregistrer</string>
+    <string name="photo">Photo</string>
+    <string name="addProduct">+ Ajouter un produit</string>
+    <string name="addProductNavBar">Ajouter un produit</string>
+    <string name="profileNiv">Votre profil est complété à</string>
+    <string name="completeProfile">Veuillez compléter votre profil</string>
+    <string name="confiramtionPassNotCorrect"></string>
+    <string name="viewAlbum">Voir L’album</string>
+    <string name="follow">Suivre ce membre</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="affinity">Affinité</string>
+    <string name="subscribe">S’abonner</string>
+    <string name="subscribed">Abonné</string>
+    <string name="loadMore">Plus#8230;</string>
+    <string name="fieldsNotFilled">Veuillez remplir tous les champs et ajouter une photo de profil</string>
+    <string name="firstname">Prénom (entre 2 et 15 caractères)</string>
+    <string name="lastname">Nom (entre 2 et 15 caractères)</string>
+    <string name="pseudo">Pseudo (entre 4 et 15 caractères)</string>
+    <string name="firstNameValidation">Prénom (entre 2 et 15 caractères)</string>
+    <string name="lastNameValidation">Nom (entre 2 et 15 caractères)</string>
+    <string name="pseudoValidation">Pseudo (entre 4 et 15 caractères)</string>
+    <string name="alphabetOnlyFistName">Prénom caractères alphabétiques uniquement</string>
+    <string name="alphabetOnlyLastName">Nom de famille caractères alphabétiques uniquement</string>
+    <string name="minimumPassword">Mot de passe minimum 4 caractères</string>
+    <string name="user">Membre</string>
+    <string name="birthdate">Date de naissance</string>
+    <string name="sex">Titre</string>
+    <string name="miss">Mademoiselle</string>
+    <string name="madam">Madame</string>
+    <string name="mister">Monsieur</string>
+    <string name="activity">Activité</string>
+    <string name="cityOrCountry">Ville ou Pays</string>
+    <string name="updateSucceed">La mise à  jour est réussie.</string>
+    <string name="updateFailed">La mise à  jour a échoué.</string>
+    <string name="facebook_share_sentence">Découvrez l’application SoGoods</string>
+    <!--
+<string name="elapsed_seconds">Il y a %i secondes</string>
+<string name="elapsed_minutes">Il y a %i minute(s)</string>
+<string name="elapsed_hours">Il y a %i heure(s)</string>
+<string name="elapsed_days">Il y a %i jour(s)"</string>
+<string name="elapsed_weeks">Il y a %i semaine(s)</string>
+<string name="elapsed_months">Il y a %i mois</string>
+<string name="elapsed_years">Il y a %i an(s)</string>
+    -->
+    <string name="elapsed_seconds">Il y a </string>
+    <string name="elapsed_minutes">Il y a </string>
+    <string name="elapsed_hours">Il y a </string>
+    <string name="elapsed_days">Il y a </string>
+    <string name="elapsed_weeks">Il y a </string>
+    <string name="elapsed_months">Il y a </string>
+    <string name="elapsed_years">Il y a </string>
+    <string name="elapsed_seconds_af"> secondes</string>
+    <string name="elapsed_minutes_af"> minute(s)</string>
+    <string name="elapsed_hours_af"> heure(s)</string>
+    <string name="elapsed_days_af"> jour(s)"</string>
+    <string name="elapsed_weeks_af"> semaine(s)</string>
+    <string name="elapsed_months_af"> mois</string>
+    <string name="elapsed_years_af"> an(s)</string>
+    <string name="years">ans</string>
+    <string name="move_picture_large">Déplacez la photo dans le cadre pour votre photo de profil</string>
+    <string name="move_picture_small">Déplacez la photo dans le cadre pour votre photo dans les commentaires</string>
+    <string name="your_large_picture">Votre photo de profil</string>
+    <string name="your_small_picture">Votre photo miniature pour vos commentaires</string>
+    <string name="no_followers">Vous n’avez pas de follower pour le moment.</string>
+    <string name="profile_preview">Aperçu de votre profil</string>
+    <string name="city_search_placeholder">Veuillez saisir un nom de ville</string>
+    <string name="suggested_no_following">Vous n’avez aucun abonnement pour le moment.\nCliquez ici pour suivre des membres.</string>
+    <string name="suggested_no_follower">Vous n’avez pas de membre abonné pour le moment.</string>
+    <string name="suggested_no_like">Vous n’avez liké aucun produit pour le moment.\nCliquez ici pour voir les produits.</string>
+    <string name="suggested_no_fan">Vous n’êtes fan d’aucune marque pour le moment. \nCliquez ici pour voir les marques.</string>
+    <string name="no_picture_yet">Ce membre n’a pas encore de photo.</string>
+    <string name="spread_application">Faire découvrir l’application</string>
+    <string name="addPhotoGallery">Ajouter une photo à la galerie</string>
+    <string name="setSquardImage">Veuillez sélectionner une image</string>
+    <string name="setProfileImage">Photo de profil</string>
+    <string name="largImageProfile">Grande image de profil</string>
+    <string name="squareImageProfile">Image standard de profil</string>
+    <string name="showRealName">Afficher le nom réel</string>
+    <string name="showBirthday">Afficher la date de naissance</string>
+
+    <!-- //Product related -->
+
+    <string name="likeTypeDream">J’en rêve</string>
+    <string name="likeTypeNext">Prochain achat</string>
+    <string name="likeTypeOwned">Je l’ai</string>
+    <string name="likeTypeLike">J’aime</string>
+    <string name="I_DREAM">J’en rêve</string>
+    <string name="GOT_IT">Prochain achat</string>
+    <string name="NEXT_BUY">Je l’ai</string>
+    <string name="LIKE_IT">J’aime</string>
+    <string name="report_abuse">Signaler un abus</string>
+    <string name="report_successful">Merci pour votre signalement</string>
+    <string name="report_failed">Le signalement a échoué, veuillez réessayer</string>
+    <string name="initialComment">Descriptif #8230; </string>
+    <string name="initialMessageRepport">Signaler un abus</string>
+    <string name="searchViaGoogle">Chercher via Google</string>
+    <string name="use">Utiliser</string>
+    <string name="publish">Publier</string>
+    <string name="veuillezRemplirLesDeuxChamps">Veuillez remplir les deux champs</string>
+    <string name="veuillezChoisirUnePhoto">Veuillez ajouter une photo</string>
+    <string name="veuillezChoisirUneCategorie">Veuillez choisir une catégorie</string>
+    <string name="veuillezChoisirUneMarque">Veuillez choisir une marque</string>
+    <string name="veuillezChoisirUnNomDeProduit">Veuillez choisir un nom de produit</string>
+    <string name="product_name_brand">Nom et marque du produit</string>
+    <string name="product_from_brand">de </string>
+    <string name="added_by">Ajouté par </string>
+    <string name="added_by_on">Ajoutée par  le </string>
+    <string name="added_success">Votre produit a bien été créé.</string>
+    <string name="productInBrand">Produits de </string>
+    <string name="likeList">Likes de</string>
+
+    <!-- // comoment related -->
+    <string name="updateComment">Mise à jour commenter</string>
+    <string name="putComment">Mettez votre commentaire ici!!</string>
+
+    <!-- //Category related -->
+    <string name="aroundMe">A proximité</string>
+    <string name="elsewhere">A proximité</string>
+
+    <!-- //Brand related -->
+    <string name="list">  Liste</string>
+    <string name="map">  Carte</string>
+    <string name="searchBrand">Chercher une marque</string>
+    <string name="requestedLocation">Lieu demandé</string>
+    <string name="tradeShop">Boutiques officielles</string>
+    <string name="retailerShop">Revendeurs</string>
+    <string name="resultsInRadius">Résultats dans un rayon de x km</string>
+    <string name="searchBrandLike">Choisissez une marque que vous souhaitez être fan de</string>
+    <string name="chooseBrands">Sélectionnez vos marques préférées</string>
+    <string name="noShopResult">Aucune boutique n’a été trouvée à proximité de votre position</string>
+    <string name="brandAdded">Nouvelle marque ajoutée avec succès.</string>
+
+    <!-- // Add product -->
+    <string name="selectTheProductCategory">Choisir la catégorie du produit</string>
+    <string name="createProduct">Créer</string>
+    <string name="productName">Nom de produit</string>
+    <!-- //added by Huu Nam -->
+    <string name="productDes">Description du produit</string>
+    <!-- // -->
+    <string name="brandName">Marque</string>
+    <string name="categoryTitle">Catégorie</string>
+    <string name="veuillezLaisserUnCommentaire">Veuillez laisser un commentaire</string>
+    <string name="categoryNotMatchingBrand">La marque sélectionnée ne correpond pas à votre catégorie.</string>
+    <string name="selectPhoto">Sélectionner une photo</string>
+    <string name="editPhotoProduct">Modifier une photo</string>
+
+    <!-- //MISC -->
+
+    <string name="menu">Menu</string>
+    <string name="back">Retour</string>
+    <string name="noResult">No Results</string>
+    <string name="noSearchingResult">Aucun résultat</string>
+    <string name="notFound">Aucun résultat</string>
+
+    <!-- // Quiz Page -->
+    <!-- //"questionTest"                      =   "Vos vacances sont plutôt: -->
+    <string name="questionTest">Vos vacances sont plutôt:</string>
+    <!-- // QuizResult Page -->
+    <!-- //"thanksForParticipation"            =   "Merci pour votre participation \n Vous avez le même lifestyle que %d members</string> -->
+    <!-- //"thanksForParticipation"            =   "Thanks for your participation \n x% of members share your lifestyle</string> -->
+    <string name="thanksForParticipation">Merci pour votre participation</string>
+    <string name="myQuizz">Mon quizz</string>
+    <string name="startQuizz">Démarrer le quiz</string>
+    <string name="next">Commencer  > </string>
+    <string name="skipQuizz">Commencer  > </string>
+    <string name="numberLabel">Vous venez de sélectionner %i marque</string>
+    <string name="numberLabels">Vous venez de sélectionner %i marques</string>
+    <string name="errorQuizz">Problème de connexion, nous vous rappelerons ce qizz plus tard</string>
+    <string name="errorConnect">Erreur de connexion</string>
+    <string name="finish">Terminer</string>
+    <string name="quizzAgain">Vous n’avez pas encore participé au quizz. Souhaitez-vous y participer ?</string>
+    <string name="didChooseAnswer">Vous n’avez pas choisi une réponse</string>
+    <string name="forgetAnswer">Vous devez répondre à la question %i</string>
+
+    <!-- // Camera -->
+    <string name="takePicture">Prendre une photo</string>
+    <string name="choosePicture">Choisir une photo</string>
+    <string name="select">Choisissez</string>
+    <string name="skip">Passer</string>
+    <string name="cancel">Annuler</string>
+
+    <!-- // Gallery Photo Page -->
+    <string name="edition">Edition</string>
+    <string name="delete">Supprimer</string>
+    <!-- //"addPicture"                        =   "+ Add a picture -->
+    <string name="addPicture">+ Ajouter</string>
+    <string name="addPictureLine2">une photo</string>
+    <string name="support">Support</string>
+    <string name="lbthank">Thank for your participation</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to refresh#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh#8230;</string>
+    <!--
+//added by Huu Nam for delete a profile photo in profile
+//added april - 24 -2013
+    -->
+    <string name="added_new_comment">added new comment</string>
+    <string name="followed_you">followed you</string>
+    <string name="added_new_product">added new product</string>
+    <string name="there_is">There is</string>
+    <string name="new_comment_on_your_product">new comment on your product</string>
+    <string name="added_new_picture">added new picture</string>
+    <string name="deleteTitle">Question</string>
+    <string name="deleteQuetstion">Voulez vous supprimer cette photo ?</string>
+    <string name="storeLocator">Store locator</string>
+    <string name="sport">Sport</string>
+    <string name="stylish">Stylish</string>
+    <string name="designer">Designer</string>
+    <string name="student">Student</string>
+    <string name="select_member">Select the members you want to follow</string>
+    <string name="email_exist">Le serveur indisponible, veuillez réessayer dans un moment</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSogoods</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. Please help me fix this by sending us error data, all you have to do is click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_notif_ticker_text">Unexpected error, please send a report#8230;</string>
+    <string name="crash_notif_title">Feather crashed#8230;</string>
+    <string name="crash_notif_text">Please click here to help fix the issue.</string>
+    <string name="launch_editor">Launch Editor</string>
+    <string name="choose_photo">Choose a Photo</string>
+    <string name="external_storage_na_title">Attention</string>
+    <string name="external_storage_na_message">sdcard is missing or currently not mounted. Cannot continue.</string>
+    <string name="get_mobile_library">Get Android Library</string>
+    <string name="view_documentation">View Documentation</string>
+    <string name="hi_res_service_label">HI-RES Service</string>
+    <string name="crash_toast_text">Ooooops! I crashed, but a report has been sent to my developer to help him fix the issue!</string>
+    <string name="image_details">Image Details</string>
+    <!-- Meher Khiari -->
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="prenom_hint">2 à 15 caractères</string>
+    <string name="nom_hint">2 à 15 caractères</string>
+    <string name="username">Pseudo</string>
+    <string name="username_hint">4 à 20 caractères</string>
+    <string name="birthdate_hint">JJ/MM/AAAA</string>
+    <string name="show_username">Afficher le pseudo</string>
+    <string name="city">Ville</string>
+    <string name="confirmPassword">Confirmation</string>
+    <string name="my_account">MON COMPTE</string>
+    <string name="min_age_error">Vous devez avoir 18 ans pour vous inscrire</string>
+
+</resources>

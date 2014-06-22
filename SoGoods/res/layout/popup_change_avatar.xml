@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sogoods_gray_color" >
+
+    
+    <RelativeLayout
+        android:id="@+id/relativetxtedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/bttEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bar_noire_rayee"
+            android:textColor="@color/sogoods_white_color"
+            android:text="@string/edition" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_below="@+id/relativetxtedit" android:visibility="gone">
+
+        <Button
+            android:id="@+id/bttTakePict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bar_noire_rayee"
+            android:text="@string/takePicture" 
+            android:textColor="@color/sogoods_white_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_below="@+id/relativeLayout1">
+
+        <Button
+            android:id="@+id/bttChoosePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bar_noire_rayee"
+            android:textColor="@color/sogoods_white_color"
+            android:text="@string/choosePicture" />
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:id="@+id/relativeLayoutCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/image_container" >
+        <Button
+         android:id="@+id/bttCancel"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/bar_noire_rayee"
+         android:textColor="@color/sogoods_white_color"
+         android:text="Cancel" />
+    </RelativeLayout>
+
+     
+    
+</RelativeLayout>

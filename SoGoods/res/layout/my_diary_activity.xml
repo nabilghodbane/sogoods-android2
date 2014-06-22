@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar" >
+
+        <ImageView
+            android:id="@+id/bttBackDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:src="@drawable/bouton_back2x"
+            android:layout_marginRight="15dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/bttMenuRight"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/right_menu_switch"
+            android:clickable="true"
+            android:text="@string/menu"
+            android:onClick="processClickMenuPopup" />
+
+        <TextView
+            android:id="@+id/lbNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gold_color"
+            android:textStyle="bold" 
+            android:layout_toRightOf="@+id/bttBackDiary"
+            android:layout_toLeftOf="@+id/bttMenuRight"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgAccLarge"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="fill"
+            android:contentDescription="@string/access_profile_image"
+            android:background="#000"/>
+
+        <TextView
+            android:id="@+id/usname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgAccLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/sogoods_white_color"
+            android:textStyle="bold" />
+
+        <!--
+             <ImageView
+            android:id="@+id/imageFlags"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/imgAccLarge"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/profile_prefs" />
+        -->
+
+        <ProgressBar
+            android:id="@+id/progressBarAvartar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/progressbar3" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/profile_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.hitechno.sogoods.views.FuturaToggleButton
+            android:id="@+id/profile_follows_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/hover"
+            android:onClick="onProfileFilterClicked"
+            android:text="@string/follower_s"
+            android:textOff="@string/follower_s"
+            android:textOn="@string/follower_s"
+            sogoods:typeface="futura_std_medium" />
+
+        <com.hitechno.sogoods.views.FuturaToggleButton
+            android:id="@+id/profile_following_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/hover"
+            android:onClick="onProfileFilterClicked"
+            android:text="@string/following"
+            android:textOff="@string/following"
+            android:textOn="@string/following"
+            sogoods:typeface="futura_std_medium" />
+
+        <com.hitechno.sogoods.views.FuturaToggleButton
+            android:id="@+id/profile_brands_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/hover"
+            android:onClick="onProfileFilterClicked"
+            android:text="@string/fan_s"
+            android:textOff="@string/fan_s"
+            android:textOn="@string/fan_s"
+            sogoods:typeface="futura_std_medium" />
+
+        <com.hitechno.sogoods.views.FuturaToggleButton
+            android:id="@+id/profile_products_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/hover"
+            android:onClick="onProfileFilterClicked"
+            android:text="@string/so"
+            android:textOff="@string/so"
+            android:textOn="@string/so"
+            sogoods:typeface="futura_std_medium" />
+
+        <com.hitechno.sogoods.views.FuturaToggleButton
+            android:id="@+id/profile_photos_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/hover"
+            android:onClick="onProfileFilterClicked"
+            android:text="@string/gallery"
+            android:textOff="@string/photos"
+            android:textOn="@string/photos"
+            sogoods:typeface="futura_std_medium" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/my_profile_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical" />
+
+</LinearLayout>

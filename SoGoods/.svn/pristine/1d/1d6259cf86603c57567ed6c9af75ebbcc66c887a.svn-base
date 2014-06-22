@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:id="@+id/store_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headerDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_table" >
+
+        <ImageView
+            android:id="@+id/bttBackDiary"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:src="@drawable/bouton_back"
+            android:visibility="visible" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/store_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            sogoods:typeface="futura_std_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgStore"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="fill"
+            android:contentDescription="@string/access_profile_image"
+            android:src="@drawable/def" />
+    </RelativeLayout>
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPostalAddress"
+        sogoods:typeface="futura_std_medium" />
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_address_phone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textUri"
+        sogoods:typeface="futura_std_medium" />
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_address_url"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textUri"
+        android:text="hhhh"
+        sogoods:typeface="futura_std_medium" />
+
+    <LinearLayout
+        android:id="@+id/store_brands_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical" />
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_concierge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/concierge"
+        sogoods:typeface="futura_std_medium" />
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:id="@+id/store_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_margin"
+    style="@style/StoreDetail">
+    
+    <com.hitechno.sogoods.views.FuturaTextView android:id="@+id/store_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        sogoods:typeface="futura_std_medium"
+        style="@style/StoreName"/>
+    
+    <com.hitechno.sogoods.views.FuturaButton android:id="@+id/store_address"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPostalAddress"
+        sogoods:typeface="futura_std_medium"
+        style="@style/StoreAddressAndUrlButton"/>
+    
+    <com.hitechno.sogoods.views.FuturaButton android:id="@+id/store_address_url"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textUri"
+        sogoods:typeface="futura_std_medium"
+        style="@style/StoreAddressAndUrlButton"/>
+    
+    <LinearLayout android:id="@+id/store_brands_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"/>
+
+    <com.hitechno.sogoods.views.FuturaButton android:id="@+id/store_concierge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/concierge"
+        sogoods:typeface="futura_std_medium"
+        style="@style/StoreConciergeButton"/>
+</LinearLayout>
+-->

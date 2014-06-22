@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/search_product_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/light_gray" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/product"
+                sogoods:typeface="futura_std_medium" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/search_product_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <ListView
+            android:id="@+id/search_list_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ffd5d5d5"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/search_brand_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/light_gray" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/brand"
+                sogoods:typeface="futura_std_medium" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/search_brand_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <ListView
+            android:id="@+id/search_list_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ffd5d5d5"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/search_shop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/light_gray" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/shop"
+                sogoods:typeface="futura_std_medium" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/search_shop_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <ListView
+            android:id="@+id/search_list_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ffd5d5d5"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/search_member_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/light_gray" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/user"
+                sogoods:typeface="futura_std_medium" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/search_member_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                sogoods:typeface="futura_std_medium" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray2"
+            android:contentDescription="@string/app_name" />
+
+        <ListView
+            android:id="@+id/search_list_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#ffd5d5d5"
+            android:dividerHeight="1dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</ScrollView>

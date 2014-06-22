@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/generic_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/brands_loading_image" />
+
+    <!--
+         <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/generic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/generic_image"
+        android:textColor="@color/sogoods_dark_color"
+        android:textSize="17sp"
+        sogoods:typeface="futura_std_medium" />
+    -->
+
+    <com.hitechno.sogoods.views.CustomFontTextView
+        android:id="@+id/generic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/generic_image"
+        android:text="@string/added_by"
+        android:textColor="@color/sogoods_dark_color"
+        android:textSize="17sp"
+        sogoods:customFont="fonts/HelveticaNeue-Light.ttf" />
+
+</RelativeLayout>

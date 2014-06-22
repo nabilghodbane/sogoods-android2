@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="30" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp" >
+
+                        <ImageView
+                            android:id="@+id/imgEditComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit" />
+
+                        <ImageView
+                            android:id="@+id/imgErrorComment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgEditComment"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/error" />
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/timercommentid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tableLayout1"
+                android:text="TextView 2" />
+
+            <TextView
+                android:id="@+id/imgContentComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/timercommentid"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/timercommentid"
+                android:background="@drawable/sogood_a"
+                android:text="asdgjas fgsd fgsdf gsd fghsdflg sdfgshdfgshdf gsdfgsdf gsdfghsldfgsdf asdgjas fgsd fgsdf gsd fghsdflg sdfgshdfgshdf gsdfgsdf gsdfghsldfgsdf"
+                android:textColor="@color/light_gold_color"
+                android:paddingLeft="5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgAvatarComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/brands_loading_image"
+                 />
+
+        </RelativeLayout>
+    </LinearLayout>
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:orientation="horizontal" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/timercommentid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eghjk" 
+                android:textColor="@color/brow_color"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" >
+
+                <ImageView
+                    android:id="@+id/imgEditComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit" />
+
+                <ImageView
+                    android:id="@+id/imgErrorComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgEditComment"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/error" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgAvatarComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/bg_nopicture_110x110" />
+
+                <TextView  android:id="@+id/imgContentComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" 
+                    android:layout_marginRight="45dp"
+                    android:layout_alignRight="@+id/imgAvatarComment"
+                    android:background="@drawable/sogood_a"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/light_gold_color"
+                    android:text="asdgjas fgsd fgsdf gsd fghsdflg sdfgshdfgshdf gsdfgsdf gsdfghsldfgsdf asdgjas fgsd fgsdf gsd fghsdflg sdfgshdfgshdf gsdfgsdf gsdfghsldfgsdf"
+                   />
+              
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout> -->
+
+</LinearLayout>

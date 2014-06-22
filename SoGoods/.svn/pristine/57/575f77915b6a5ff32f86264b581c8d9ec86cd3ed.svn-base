@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/headerDiary" android:background="@color/black" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.hitechno.sogoods.views.FuturaTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/quizz_left_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" sogoods:typeface="futura_std_light" />
+            <com.hitechno.sogoods.views.FuturaTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/lbNameHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addProduct_u" android:layout_centerInParent="true" sogoods:typeface="futura_std_medium" />
+            <com.hitechno.sogoods.views.FuturaTextView android:textSize="18.0sp" android:textColor="@color/menu2" android:id="@+id/quizz_right_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" sogoods:typeface="futura_std_light" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hitechno.sogoods.views.FuturaTextView android:textSize="16.0sp" android:textColor="@color/menu2" android:id="@+id/quizz_percent_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" sogoods:typeface="futura_std_medium" />
+            <ProgressBar android:layout_gravity="center" android:id="@+id/quizz_progress" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:max="100" style="@style/CustomProgressBar" />
+        </LinearLayout>
+        <com.hitechno.sogoods.views.FuturaTextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/quizz_question_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" sogoods:typeface="futura_std_medium" />
+        <com.hitechno.sogoods.views.FuturaTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/quizz_question_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" sogoods:typeface="futura_std_book" />
+        <ListView android:id="@+id/quizz_question_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:divider="@null" android:choiceMode="singleChoice" />
+        <GridView android:id="@+id/quizz_question_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:numColumns="2" android:choiceMode="singleChoice" />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/quizz_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

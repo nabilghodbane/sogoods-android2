@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<group android:id="@+id/group_popupmenu">
+	    <item android:id="@+id/menu1"
+	          android:title="Dream"/>
+	    <item android:id="@+id/menu2"
+	          android:title="Next purchase"/>
+	    <item android:id="@+id/menu3"
+	          android:title="I've got it"/>
+	    <item android:id="@+id/menu4"
+	          android:title="I like"/>
+	    <item android:id="@+id/menu5"
+	          android:title="Cancel"/>
+	</group>
+  
+</menu>

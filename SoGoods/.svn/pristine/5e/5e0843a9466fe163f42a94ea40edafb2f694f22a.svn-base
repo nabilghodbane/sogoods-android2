@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linerListMap"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/menu_section"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:id="@+id/relativeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/list"
+                android:textColor="@color/gold_color" />
+
+            <ImageView
+                android:id="@+id/imageViewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/textViewList"
+                android:src="@drawable/list_icon_on2x" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="50"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imageViewMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/map_icon_off2x" />
+
+            <TextView
+                android:id="@+id/txtViewMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageViewMap"
+                android:text="@string/map"
+                android:textColor="@color/brow_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relRequestLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/requestedLocation"
+            android:textColor="@color/gold_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relTrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/sogoods_neutral_color"
+            android:paddingLeft="10dp"
+            android:text="@string/tradeShop"
+            android:textColor="@color/sogoods_white_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="8" >
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="visible" >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/txtNoresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/noResult"
+            android:textColor="@color/brow_color"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/shop_brand_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/sogoods_neutral_color"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

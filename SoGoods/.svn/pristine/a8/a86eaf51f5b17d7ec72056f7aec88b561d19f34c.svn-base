@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/categories_brands_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sogoods_light_brow_color" >
+
+        <com.hitechno.sogoods.views.FuturaEditText
+            android:id="@+id/searchCategories"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_search"
+            android:focusable="false"
+            android:hint="@string/search_profiles"
+            android:paddingLeft="40dp"
+            android:singleLine="true"
+            sogoods:typeface="futura_std_light" />
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/searchCategories"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/imageViewCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/searchCategories"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/bouton_quitter2x"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/categories_brands_search_layout" >
+
+        <ListView
+            android:id="@+id/storelocator_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/sogoods_dark_brow_color"
+            android:dividerHeight="1dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <ProgressBar
+            android:id="@+id/storelocator_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/brand_search_container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</RelativeLayout>

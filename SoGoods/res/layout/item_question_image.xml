@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/selector_question_image" android:padding="5.0dip" android:layout_width="160.0dip" android:layout_height="160.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/quizz_item_image" android:layout_width="150.0dip" android:layout_height="150.0dip" android:scaleType="center" android:adjustViewBounds="true" android:contentDescription="@string/app_name" />
+</LinearLayout>

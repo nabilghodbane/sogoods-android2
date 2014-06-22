@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:id="@+id/profile_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_gradient" >
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageFlags"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/viet_nam" />
+
+                <TextView
+                    android:id="@+id/usname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageFlags"
+                    android:text="sjgdsfhdfghf"
+                    android:textColor="@color/sogoods_gray_color" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgAffinity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/affinity_big" />
+
+            <TextView
+                android:id="@+id/txtPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imgAffinity"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="47dp"
+                android:rotation="-15"
+                android:text="90 %"
+                android:textColor="@color/sogoods_white_color"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAffinity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtPercent"
+                android:layout_marginRight="23dp"
+                android:rotation="-15"
+                android:text="Affinity"
+                android:textColor="@color/sogoods_white_color" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/progressbar3" />
+        </RelativeLayout>
+
+        <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shadow_extent"
+            android:layout_gravity="top"
+            android:paddingLeft="@dimen/shadow_padding"
+            android:paddingRight="@dimen/shadow_padding"
+            android:src="@drawable/top_shadow" />
+
+        <ImageView
+            android:layout_width="@dimen/shadow_extent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/right_shadow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shadow_extent"
+            android:layout_gravity="bottom"
+            android:paddingLeft="@dimen/shadow_padding"
+            android:paddingRight="@dimen/shadow_padding"
+            android:src="@drawable/bottom_shadow" />
+
+        <ImageView
+            android:layout_width="@dimen/shadow_extent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:src="@drawable/left_shadow" /> -->
+    </FrameLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/profile_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/profile_following"
+            style="@style/RightLikesAndCommentsTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            sogoods:typeface="futura_std_medium" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/profile_follows"
+            style="@style/LeftAndCenterLikesAndCommentsTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            sogoods:typeface="futura_std_medium" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/like_profile"
+            style="@style/LeftAndCenterLikesAndCommentsTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            sogoods:typeface="futura_std_medium" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="33"
+            android:background="@drawable/product_and_profile_background_with_right_and_bottom_border"
+            android:orientation="horizontal" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/profile_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/sogoods_gray_color"
+                sogoods:typeface="futura_std_medium"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="33"
+            android:background="@drawable/product_and_profile_background_with_right_and_bottom_border"
+            android:orientation="horizontal" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/profile_follows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/sogoods_gray_color"
+                sogoods:typeface="futura_std_medium" 
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="33"
+            android:background="@drawable/product_and_profile_background_with_right_and_bottom_border"
+            android:orientation="horizontal" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/like_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/sogoods_gray_color"
+                sogoods:typeface="futura_std_medium" 
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/like_profile"
+                android:src="@drawable/product_full_heart2x" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

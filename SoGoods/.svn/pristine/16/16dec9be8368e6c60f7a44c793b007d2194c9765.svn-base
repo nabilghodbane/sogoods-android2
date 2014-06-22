@@ -1,0 +1,51 @@
+package com.hitechno.sogoods.util;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Map;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
+import android.net.Uri;
+
+public class CommTools {
+	public static InputStream callWebService(String ws, Map<String, String> params) {
+		InputStream result = null;
+		Uri.Builder builder = Uri.parse(ws).buildUpon();
+		if (params != null) {
+			for (String key : params.keySet()) {
+				builder.appendQueryParameter(key, params.get(key));
+			}
+		}
+		HttpGet request = new HttpGet(builder.build().toString());
+		DefaultHttpClient client = new DefaultHttpClient();
+		try {
+			HttpResponse response = client.execute(request);
+			result = response.getEntity().getContent();
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	public static String stringuifyIS(InputStream is) {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+		String line;
+		String result = "";
+		try {
+			while ((line = reader.readLine()) != null) {
+				result += line;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return result;
+	}
+}

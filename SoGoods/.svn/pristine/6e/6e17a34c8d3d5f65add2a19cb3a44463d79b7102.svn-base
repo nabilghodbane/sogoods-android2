@@ -1,0 +1,31 @@
+[
+  { "title": "RTW-Men", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/rtw-men.png" },
+  { "title": "RTW-Women", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/rtw-women.png" },
+  { "title": "Shoes (M)", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/shoes_(m).png" },
+  { "title": "Shoes (W)", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/shoes_(w).png" },
+  { "title": "Bags", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/bags.png" },
+  { "title": "Timepieces", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/timepieces.png" },
+  { "title": "Jewellery", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/jewellery.png" },
+  { "title": "Accessories", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/accessories.png",
+    "categories": [
+      { "title": "Writing", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/writing.png" },
+      { "title": "Leather Goods", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/leather_goods.png" },
+      { "title": "Lighters", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/lighters.png" },
+      { "title": "Others", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/others.png" }
+    ]
+  },
+  { "title": "High-Tech", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/high-tech.png",
+    "categories": [
+      { "title": "Phones", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/phones.png" },
+      { "title": "Multimedia", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/multimedia.png" }
+    ]
+  },
+  { "title": "Design", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/design.png" ,
+    "categories": [
+      { "title": "Furniture", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/furniture.png" },
+      { "title": "Decoration", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/decoration.png" }
+    ]
+  },
+  { "title": "Cars", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/cars.png" },
+  { "title": "Kids", "url": "/data/data/com.hitechno.sogoods/files/assets/categories/kids.png" }
+]

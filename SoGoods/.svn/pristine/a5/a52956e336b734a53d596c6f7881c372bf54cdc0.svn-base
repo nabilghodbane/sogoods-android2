@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ahalf__black_transparent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/dialog_addpic_edit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hover_like"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="@string/edition"
+        android:textColor="#ffd5baa5"
+        android:textSize="18.0sp"
+        android:visibility="gone"
+        sogoods:typeface="futura_std_light" />
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/dialog_addpic_takepic_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/hover_like"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="@string/takePicture"
+        android:textColor="#ffd5baa5"
+        android:textSize="18.0sp"
+        sogoods:typeface="futura_std_light" />
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/dialog_addpic_choosepic_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip"
+        android:background="@drawable/hover_like"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="@string/choosePicture"
+        android:textColor="#ffd5baa5"
+        android:textSize="18.0sp"
+        sogoods:typeface="futura_std_light" />
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/dialog_addpic_cancel_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/hover_like"
+        android:gravity="center"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:text="@android:string/cancel"
+        android:textColor="#ffd5baa5"
+        android:textSize="18.0sp"
+        android:textStyle="bold"
+        sogoods:typeface="futura_std_medium" />
+
+</LinearLayout>

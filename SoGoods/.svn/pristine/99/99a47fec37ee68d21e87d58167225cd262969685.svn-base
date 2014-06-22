@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:id="@+id/store_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/dark_background" >
+    <!-- android:layout_margin="@dimen/activity_margin" -->
+
+    <RelativeLayout
+        android:id="@+id/headerDiary"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar" >
+
+        <ImageView
+            android:id="@+id/bttBackDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:src="@drawable/bouton_back2x"
+            android:visibility="visible" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             android:textColor="@color/gold_color" 
+            sogoods:typeface="futura_std_medium"
+            android:layout_toRightOf="@+id/bttBackDiary"
+            android:paddingLeft="10dp"
+            android:text="asdgsfdg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgStore"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="fill"
+            android:contentDescription="@string/access_profile_image"
+            android:src="@drawable/bg_nopicture_640x160" />
+    </RelativeLayout>
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        sogoods:typeface="futura_std_medium"
+        android:background="@drawable/shop_address_button"
+        android:layout_marginTop="30dp" android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/sogoods_gray_color"/>
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_address_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        sogoods:typeface="futura_std_medium"
+        android:background="@drawable/shop_website_button" 
+        android:layout_margin="10dp"
+        android:textColor="@color/sogoods_gray_color"/>
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_address_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        sogoods:typeface="futura_std_medium"
+        android:background="@drawable/shop_website_button" 
+        android:textColor="@color/sogoods_gray_color" />
+
+    <LinearLayout
+        android:id="@+id/store_brands_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical" />
+
+    <com.hitechno.sogoods.views.FuturaButton
+        android:id="@+id/store_concierge_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/concierge"
+        sogoods:typeface="futura_std_medium" 
+        android:background="@drawable/shop_concierge_button"
+        android:textColor="@color/sogoods_gray_color"/>
+
+</LinearLayout>

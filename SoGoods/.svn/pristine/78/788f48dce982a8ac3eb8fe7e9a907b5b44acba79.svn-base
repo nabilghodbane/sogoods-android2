@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Brand 1",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_one.png",
+    "category_id": 1
+  }, {
+    "name": "Brand 2",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_two.png",
+    "category_id": 1
+  }, {
+    "name": "Brand 3",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_three.png",
+    "category_id": 2
+  }, {
+    "name": "Brand 4",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 2
+  }, {
+    "name": "Brand 5",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 2
+  }, {
+    "name": "Brand 6",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 3
+  }, {
+    "name": "Brand 7",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 4
+  }, {
+    "name": "Brand 8",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 4
+  }, {
+    "name": "Brand 9",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 5
+  }, {
+    "name": "Brand 10",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 6
+  }, {
+    "name": "Brand 11",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 6
+  }, {
+    "name": "Brand 12",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 7
+  }, {
+    "name": "Brand 13",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 7
+  }, {
+    "name": "Brand 14",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 7
+  }, {
+    "name": "Brand 15",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 8
+  }, {
+    "name": "Brand 16",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 9
+  }, {
+    "name": "Brand 17",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 9
+  }, {
+    "name": "Brand 18",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 10
+  }, {
+    "name": "Brand 19",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 10
+  }, {
+    "name": "Brand 20",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 10
+  }, {
+    "name": "Brand 21",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 11
+  }, {
+    "name": "Brand 22",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 12
+  }, {
+    "name": "Brand 23",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 12
+  }, {
+    "name": "Brand 24",
+    "url": "/data/data/com.hitechno.sogoods/files/assets/brands/brand_four.png",
+    "category_id": 12
+  }
+]

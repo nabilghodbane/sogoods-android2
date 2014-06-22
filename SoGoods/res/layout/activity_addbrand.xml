@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+     <RelativeLayout android:background="@color/black" android:padding="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hitechno.sogoods.views.FuturaTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addBrand" android:layout_centerInParent="true" sogoods:typeface="futura_std_bold" />
+        <com.hitechno.sogoods.views.FuturaTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/addbrand_button_OK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/OK" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" sogoods:typeface="futura_std_light" />
+    </RelativeLayout>
+      <RelativeLayout android:id="@+id/categories_brands_search_layout" android:background="@color/sogoods_light_brow_color" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <EditText android:textColor="@color/black" android:id="@+id/addbrand_search_input" android:background="@drawable/background_search" android:paddingLeft="40.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/searchBrand" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@+id/imageViewSearch" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/search" android:layout_alignLeft="@+id/addbrand_search_input" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@+id/imageViewCut" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/bouton_quitter2x" android:layout_alignRight="@+id/addbrand_search_input" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+	<com.hitechno.sogoods.util.IndexableListView
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    android:clickable="true"
+	    android:background="#ffffff"
+	    android:id="@+id/listview" />
+	    <ProgressBar android:id="@+id/pbLoading" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    
+</LinearLayout>

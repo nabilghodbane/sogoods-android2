@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <fragment class="com.hitechno.sogoods.fragments.SigninFragment"
+			android:id="@+id/signin" android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+ <fragment class="com.hitechno.sogoods.fragments.SignupInitialFragment"
+			android:id="@+id/signup_initial" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:visibility="gone"/>
+    <fragment class="com.hitechno.sogoods.fragments.SignupFinalFragment"
+			android:id="@+id/signup_final" android:layout_width="match_parent"
+			android:layout_height="match_parent"  android:visibility="gone"/> 
+</LinearLayout>

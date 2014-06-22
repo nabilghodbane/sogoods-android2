@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<com.hitechno.sogoods.views.FuturaTextView
+		android:id="@+id/question" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:layout_margin="10dp"
+		android:gravity="center_horizontal" sogoods:typeface="futura_std_medium"
+		 />
+
+	<LinearLayout android:id="@+id/question_images_layout"
+		android:layout_width="match_parent" android:layout_height="174dp"
+		android:layout_marginLeft="10dp"
+		android:orientation="horizontal" android:weightSum="205">
+
+		<FrameLayout android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_weight="100">
+
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+<!-- 
+				<ImageView android:id="@+id/first_image"
+					android:layout_width="match_parent" android:layout_height="match_parent"
+					android:contentDescription="@string/access_signup_question_image" />
+				<ImageView android:layout_width="match_parent"
+					android:layout_height="@dimen/shadow_extent" android:src="@drawable/top_shadow"
+					android:layout_gravity="top" android:paddingLeft="@dimen/shadow_padding"
+					android:paddingRight="@dimen/shadow_padding" />
+				<ImageView android:layout_width="@dimen/shadow_extent"
+					android:layout_height="match_parent" android:src="@drawable/right_shadow"
+					android:layout_gravity="right" />
+				<ImageView android:layout_width="match_parent"
+					android:layout_height="@dimen/shadow_extent" android:src="@drawable/bottom_shadow"
+					android:layout_gravity="bottom" android:paddingLeft="@dimen/shadow_padding"
+					android:paddingRight="@dimen/shadow_padding" />
+				<ImageView android:layout_width="@dimen/shadow_extent"
+					android:layout_height="match_parent" android:src="@drawable/left_shadow"
+					android:layout_gravity="left" /> -->
+			</FrameLayout>
+
+			<com.hitechno.sogoods.views.QuestionTabView
+				android:id="@+id/first_question_tab" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="bottom" />
+		</FrameLayout>
+
+		<FrameLayout android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_weight="100">
+
+			<FrameLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+<!-- 				<ImageView android:id="@+id/second_image"
+					android:layout_width="match_parent" android:layout_height="match_parent"
+					android:contentDescription="@string/access_signup_question_image" />
+				<ImageView android:layout_width="match_parent"
+					android:layout_height="@dimen/shadow_extent" android:src="@drawable/top_shadow"
+					android:layout_gravity="top" android:paddingLeft="@dimen/shadow_padding"
+					android:paddingRight="@dimen/shadow_padding" />
+				<ImageView android:layout_width="@dimen/shadow_extent"
+					android:layout_height="match_parent" android:src="@drawable/right_shadow"
+					android:layout_gravity="right" />
+				<ImageView android:layout_width="match_parent"
+					android:layout_height="@dimen/shadow_extent" android:src="@drawable/bottom_shadow"
+					android:layout_gravity="bottom" android:paddingLeft="@dimen/shadow_padding"
+					android:paddingRight="@dimen/shadow_padding" />
+				<ImageView android:layout_width="@dimen/shadow_extent"
+					android:layout_height="match_parent" android:src="@drawable/left_shadow"
+					android:layout_gravity="left" /> -->
+			</FrameLayout>
+
+			<com.hitechno.sogoods.views.QuestionTabView
+				android:id="@+id/second_question_tab" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="bottom" />
+		</FrameLayout>
+
+	</LinearLayout>
+</LinearLayout>

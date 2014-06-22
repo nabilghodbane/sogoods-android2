@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10.0dip" >
+
+            <LinearLayout
+                android:id="@+id/brandbycate_back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_back"
+                    android:contentDescription="@string/app_name"
+                    android:duplicateParentState="true"
+                    android:onClick="onClick" />
+
+                <com.hitechno.sogoods.views.FuturaTextView
+                    android:id="@+id/txtBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/back"
+                    android:textColor="@color/white"
+                    android:textSize="20.0sp"
+                    sogoods:typeface="futura_std_light" />
+            </LinearLayout>
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/brandbycate_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18.0sp"
+                android:textStyle="bold"
+                sogoods:typeface="futura_std_bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/brandbycate_search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@color/sogoods_light_brow_color" >
+
+            <com.hitechno.sogoods.views.FuturaEditText
+                android:id="@+id/brandbycate_search_input"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/background_search"
+                android:hint="@string/findCity"
+                android:onClick="onClick"
+                android:paddingLeft="40.0dip"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                sogoods:typeface="futura_std_light" />
+
+            <ImageView
+                android:id="@+id/imageViewSearch"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignLeft="@+id/brandbycate_search_input"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/search" />
+
+            <ImageView
+                android:id="@+id/imageViewCut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/brandbycate_search_input"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/bouton_quitter2x"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/sogoods_dark_brow_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/brandbycate_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10.0dip"
+                android:gravity="center"
+                android:text="@string/refresh"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"
+                sogoods:typeface="futura_std_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/brandbycate_refresh"
+                android:orientation="vertical"
+                android:padding="10.0dip" >
+
+                <com.hitechno.sogoods.views.FuturaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/yourpos"
+                    android:textColor="@color/black"
+                    android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    sogoods:typeface="futura_std_bold" />
+
+                <com.hitechno.sogoods.views.FuturaTextView
+                    android:id="@+id/brandbycate_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/text1"
+                    android:textSize="18.0sp"
+                    sogoods:typeface="futura_std_light" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.hitechno.sogoods.util.IndexableListView
+                android:id="@+id/brandbycate_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/divider"
+                android:dividerHeight="1.0dip" />
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtNoResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/iconegrise022x"
+                android:text="@string/suggested_no_fan"
+                android:textColor="@color/brow_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

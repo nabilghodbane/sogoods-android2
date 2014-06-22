@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Right or left Menu Panel -->
+
+    <FrameLayout
+        android:id="@+id/menuPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/navbar" >
+    </FrameLayout>
+
+    <!-- Main Panel -->
+    <!-- start -->
+
+    <LinearLayout
+        android:id="@+id/slidingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_background"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navbar" >
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/pager"
+                style="@style/Page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dark_background"
+                tools:context=".ApplicationActivity" >
+
+                <android.support.v4.view.FuturaPagerTitleStrip
+                    android:id="@+id/pager_title_strip"
+                    style="@style/PagerTitleStrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="2dp" />
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+       <!--  <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fillColor="#6a5648"
+            app:pageColor="#ebe3de"
+            app:radius="5dp"
+            app:strokeColor="#00000000"
+            app:strokeWidth="1dp" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_search_cate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</FrameLayout>

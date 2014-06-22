@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/signup_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="16.0sp"
+            sogoods:typeface="futura_std_light" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/create_account_u"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            sogoods:typeface="futura_std_bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="15.0dip" >
+
+            <ImageView
+                android:id="@+id/signup_email_icon"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_user_email"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/signup_email_title"
+                android:layout_width="75.0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_toRightOf="@+id/signup_email_icon"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="14.0sp"
+                sogoods:typeface="futura_std_book" />
+
+            <com.hitechno.sogoods.views.FuturaEditText
+                android:id="@+id/signup_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/signup_email_clear"
+                android:layout_toRightOf="@+id/signup_email_title"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/email_temp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/text1"
+                android:textSize="16.0sp"
+                sogoods:typeface="futura_std_light" />
+
+            <ImageView
+                android:id="@+id/signup_email_clear"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.0dip"
+                android:layout_toLeftOf="@+id/signup_email_status_layout"
+                android:background="@drawable/bouton_quitter2x"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/signup_email_status_layout"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip" >
+
+                <ImageView
+                    android:id="@+id/signup_email_status"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/login_check"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/signup_email_status_progress"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@color/light_gray"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/signup_password_icon"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_login_password" />
+
+            <com.hitechno.sogoods.views.FuturaTextView
+                android:id="@+id/signup_password_title"
+                android:layout_width="75.0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_toRightOf="@+id/signup_password_icon"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="14.0sp"
+                sogoods:typeface="futura_std_book" />
+
+            <com.hitechno.sogoods.views.FuturaEditText
+                android:id="@+id/signup_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/signup_password_clear"
+                android:layout_toRightOf="@+id/signup_password_title"
+                android:background="@color/white"
+                android:gravity="left"
+                android:hint="@string/required"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/text1"
+                android:textSize="16.0sp"
+                sogoods:typeface="futura_std_light" />
+
+            <ImageView
+                android:id="@+id/signup_password_clear"
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.0dip"
+                android:layout_toLeftOf="@+id/signup_password_status"
+                android:background="@drawable/bouton_quitter2x"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/signup_password_status"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/login_check"
+                android:contentDescription="@string/app_name"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/signup_signup_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/txtSignUpAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/create_account2"
+            android:textColor="@color/menu2"
+            android:textSize="18.0sp"
+            sogoods:typeface="futura_std_bold" />
+
+        <ProgressBar
+            android:id="@+id/pbSignUpLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/facebook_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_facebook"
+            android:contentDescription="@string/app_name" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff336699"
+            android:gravity="center_vertical"
+            android:paddingLeft="30.0dip"
+            android:text="@string/use_facebook"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            sogoods:typeface="futura_std_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/twitter_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_twitter"
+            android:contentDescription="@string/app_name" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff45b0e3"
+            android:gravity="center_vertical"
+            android:paddingLeft="30.0dip"
+            android:text="@string/use_twitter"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            sogoods:typeface="futura_std_medium" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activity_home_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods">
+    <RelativeLayout android:id="@+id/home_header_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/home_header_menu_button" android:background="@drawable/icon_menu" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+        <com.hitechno.sogoods.views.FuturaTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/home_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/storeLocator" android:layout_centerInParent="true" sogoods:typeface="futura_std_medium" />
+        <Button android:id="@+id/home_header_close_button" android:background="@drawable/error" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@+id/home_header_right_button" android:layout_centerVertical="true" />
+        <com.hitechno.sogoods.views.FuturaTextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@+id/home_header_right_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/filter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/app_name" sogoods:typeface="futura_std_light" />
+        <com.viewpagerindicator.CirclePageIndicator android:id="@+id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" android:layout_below="@+id/home_header_title" android:layout_centerHorizontal="true" app:strokeWidth="1.0dip" app:fillColor="@color/white" app:pageColor="@color/light_gray" app:radius="4.0dip" app:strokeColor="#00000000" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/home_layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/home_header_layout">
+        <android.support.v4.view.ViewPager android:id="@+id/pager" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Page"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linear_search_cate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@+id/layout_ads" android:visibility="gone" layout="@layout/popup_advertisement" />
+</RelativeLayout>

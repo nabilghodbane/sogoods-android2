@@ -1,0 +1,4 @@
+[
+  { "username": "Member -1", "url": "http://www.test.com/profiles/abcdef123456.png", "updated_at": "2013-01-01T01:01:01" },
+  { "username": "Member 0", "url": "http://www.test.com/profiles/ghijkl789012.png", "updated_at": "2013-02-02T02:02:02" }
+]

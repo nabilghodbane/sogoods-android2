@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1" >
+
+    <RelativeLayout
+        android:id="@+id/pager_with_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/background_gray"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <com.hitechno.sogoods.views.FuturaButton
+                android:id="@+id/frag_members_new_button"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_white_with_line_gray"
+                android:text="@string/new_filter"
+                sogoods:typeface="futura_std_book" />
+
+            <com.hitechno.sogoods.views.FuturaButton
+                android:id="@+id/frag_members_suggested_button"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@color/full_transparent"
+                android:text="@string/suggested"
+                sogoods:typeface="futura_std_book" />
+
+            <com.hitechno.sogoods.views.FuturaButton
+                android:id="@+id/frag_members_popular_button"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_weight="1"
+                android:background="@color/full_transparent"
+                android:text="@string/popular"
+                sogoods:typeface="futura_std_book" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pager_with_filter"
+        android:background="@color/white" >
+
+        <com.costum.android.widget.PullAndLoadListView
+            android:id="@+id/frag_members_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/frag_members_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pager_with_filter"
+        android:background="@color/light_gray" />
+
+</RelativeLayout>

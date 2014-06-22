@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" android:background="@drawable/dark_background">
+
+    <ImageView
+        android:id="@+id/follows_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/brands_loading_image2x"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp" 
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/follows_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/follows_image"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageFlags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/follows_username"
+        android:layout_below="@+id/follows_username"
+        android:src="@drawable/viet_nam" 
+        android:paddingTop="3dp"/>
+
+    <TextView
+        android:id="@+id/follows_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageFlags"
+        android:layout_toRightOf="@+id/imageFlags"
+        android:text="TextView" 
+        android:paddingLeft="3dp"/>
+
+    <ImageView
+        android:id="@+id/follow_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/follows_image"
+        android:layout_alignLeft="@+id/imageFlags"
+        android:src="@drawable/add_product_switch" />
+
+    <ImageView
+        android:id="@+id/imgAffinity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/affinity_big" />
+
+    <TextView
+        android:id="@+id/textAffinity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/follow_profile"
+        android:layout_alignLeft="@+id/txtPercent"
+        android:text="Affinity" 
+        android:textSize="12dp"/>
+
+    <com.hitechno.sogoods.views.FuturaTextView
+        android:id="@+id/txFollowProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/follow_profile"
+        android:layout_alignRight="@+id/follow_profile"
+        android:layout_alignTop="@+id/follow_profile"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/follow" 
+        android:textColor="@color/gold_color"
+        sogoods:typeface="futura_std_medium" />
+
+    <TextView
+        android:id="@+id/txtPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textAffinity"
+        android:layout_alignLeft="@+id/imgAffinity"
+        android:layout_marginLeft="19dp"
+        android:text="90 %" />
+  
+</RelativeLayout>

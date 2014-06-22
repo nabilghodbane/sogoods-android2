@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<ImageView android:layout_width="match_parent"
+		
+		android:background="@drawable/pager_drop_shadow" />
+
+	<GridView android:id="@+id/brands_grid_view"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		
+		android:orientation="horizontal" android:gravity="center"
+		android:stretchMode="spacingWidthUniform" />
+
+	<LinearLayout android:id="@+id/brand_container_fragment"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="vertical" />
+
+	<LinearLayout android:id="@+id/category_search_container_fragment"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="vertical" android:layout_alignTop="@id/brands_grid_view" />
+</FrameLayout>

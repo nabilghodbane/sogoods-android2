@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:fillViewport="true">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+
+		<com.hitechno.sogoods.views.FuturaTextView
+			android:id="@+id/my_account_message" android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:visibility="invisible"
+			sogoods:typeface="futura_std_medium" />
+
+		<LinearLayout android:id="@+id/my_account_title_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<Spinner android:id="@+id/my_account_title" android:layout_width="0dp"
+				android:layout_height="wrap_content" android:layout_weight="6"
+				android:padding="0dp" android:layout_margin="0dp" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_title_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_email_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaEditText
+				android:id="@+id/my_account_email" android:hint="@string/enter_email"
+				android:inputType="textEmailAddress" android:layout_width="0dp"
+				android:layout_height="wrap_content" android:layout_weight="6"
+				sogoods:typeface="futura_std_medium"
+				android:singleLine="true" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_email_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_password_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaEditText
+				android:id="@+id/my_account_password" android:hint="@string/enter_password"
+				android:inputType="textPassword" android:layout_width="0dp"
+				android:layout_height="wrap_content" android:layout_weight="6"
+				sogoods:typeface="futura_std_medium" 
+				android:singleLine="true" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_password_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_firstname_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaEditText
+				android:id="@+id/my_account_firstname" android:hint="@string/enter_firstname"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="6" sogoods:typeface="futura_std_medium"
+				 android:singleLine="true"
+				android:inputType="textCapSentences" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_firstname_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_lastname_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaEditText
+				android:id="@+id/my_account_lastname" android:hint="@string/enter_lastname"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="6" sogoods:typeface="futura_std_medium"
+				 android:singleLine="true"
+				android:inputType="textCapSentences"/>
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_lastname_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_username_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaEditText
+				android:id="@+id/my_account_username" android:hint="@string/enter_username"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="6" sogoods:typeface="futura_std_medium"
+				 android:singleLine="true" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_username_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_date_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaButton
+				android:id="@+id/my_account_datepicker_button" android:layout_width="0dp"
+				android:layout_height="wrap_content" android:layout_weight="6"
+				android:text="@string/enter_birthday" android:onClick="showDatePickerDialog"
+				sogoods:typeface="futura_std_medium"  />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_birthday_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_location_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaAutoCompleteTextView
+				android:id="@+id/my_account_location" android:hint="@string/enter_location"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="6" sogoods:typeface="futura_std_medium"
+				 android:singleLine="true" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_location_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_career_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaEditText
+				android:id="@+id/my_account_career" android:hint="@string/enter_career"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="6" sogoods:typeface="futura_std_medium"
+				 android:singleLine="true"
+				 android:inputType="textCapSentences" />
+
+			<com.hitechno.sogoods.views.BooleanView
+				android:id="@+id/my_account_career_status" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:gravity="center"
+				android:layout_gravity="center_vertical" android:layout_weight="1"
+				android:visibility="invisible" android:contentDescription="@string/access_is_valid_input_image" />
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/my_account_button_layout"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:weightSum="7"
+			 android:gravity="center_horizontal">
+
+			<com.hitechno.sogoods.views.FuturaButton
+				android:id="@+id/my_account_update_button" android:text="@string/update_my_account"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="6" android:enabled="false" sogoods:typeface="futura_std_medium"
+			 />
+
+			<ProgressBar android:id="@+id/my_account_progress"
+				android:layout_width="0dp" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center"
+				android:layout_gravity="center_vertical" android:visibility="gone"
+				style="@android:style/Widget.ProgressBar.Small.Inverse" />
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

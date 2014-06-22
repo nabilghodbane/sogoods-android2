@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Right or left Menu Panel -->
+
+    <FrameLayout
+        android:id="@+id/menuPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+    <!-- Main Panel -->
+    <!-- start -->
+
+    <LinearLayout
+        android:id="@+id/slidingPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/dark_background"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navbar" >
+
+            <ImageView
+                android:id="@+id/menuBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:clickable="true"
+                android:src="@drawable/bouton_back2x"
+                android:visibility="visible" 
+                android:onClick="processClickBackButton"/>
+
+            <Button
+                android:id="@+id/menuRightButton"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/right_menu_switch"
+                android:clickable="true"
+                android:text="@string/toSave"
+                android:onClick="processSaveButton" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dark_background"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/search_bar" >
+
+                    <SeekBar
+                        android:id="@+id/seekBar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/profile_img_avatar"
+                        android:layout_width="200dp"
+                        android:layout_height="135dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" 
+                        android:src="@drawable/quiz_answer"
+                        android:onClick="processClickAvatar" />
+                    <ImageView
+                        android:id="@+id/bg_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/cadre_image_actu" />
+                     <ProgressBar
+          				android:id="@+id/progressBar1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content" 
+			            android:layout_centerInParent="true"
+			            android:indeterminateDrawable="@drawable/progressbar3"/>
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/create_profile_clip" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center" >
+
+                    <Spinner
+                        android:id="@+id/my_account_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:padding="0dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textLastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                        android:hint="@string/lastname"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" />
+
+                    <ImageView
+                        android:id="@+id/imgClearLast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x" 
+                        android:onClick="processClearLast"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textfirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:digits="qwertzuiopasdfghjklyxcvbnm,QWERTZUIOPASDFGHJKLYXCVBNM"
+                        android:hint="@string/firstname"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" />
+
+                    <ImageView
+                        android:id="@+id/imgClearFirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x"
+                        android:onClick="processClearFirst" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:hint="@string/pseudo"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" />
+
+                    <ImageView
+                        android:id="@+id/imgClearUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                         android:layout_alignRight="@+id/textUs"
+                        android:src="@drawable/bouton_quitter2x" 
+                        android:onClick="processClearUsername"/>
+
+                    <ImageView
+                        android:id="@+id/imageValidateUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="1dp"
+                        android:src="@drawable/login_check"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/checkboxUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false" />
+
+                    <com.hitechno.sogoods.views.FuturaTextView
+                        android:id="@+id/txtUseYourUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/checkboxUser"
+                        android:text="@string/showRealName"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textbirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:hint="@string/birthdate"
+                        android:inputType="textCapSentences"
+                        android:onClick="showDatePickerDialog"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" 
+                        android:focusable="false"/>
+
+                    <ImageView
+                        android:id="@+id/imgClearBirdth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x"
+                        android:onClick="processClearBirthday" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/checkboxShowBd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:checked="false" />
+
+                    <com.hitechno.sogoods.views.FuturaTextView
+                        android:id="@+id/txtShowBD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/checkboxShowBd"
+                        android:hint="@string/showBirthday"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:hint="@string/cityOrCountry"
+                        android:inputType="none"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" 
+                        android:onClick="processClickChooseCity"
+                        android:focusable="false"/>
+
+                    <ImageView
+                        android:id="@+id/imgClearCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x" 
+                        android:onClick="processClearCity"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <!--
+                         <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textDesigner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:paddingLeft="5dp"
+                        android:cursorVisible="true"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable" 
+                        android:background="@drawable/champ_email_connexion"
+                        android:inputType="textCapSentences"
+                        sogoods:typeface="futura_std_medium" style="@style/AccountEditText"/>
+                    -->
+
+                    <Spinner
+                        android:id="@+id/textDesigner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:padding="0dp" />
+
+                    <ImageView
+                        android:id="@+id/imgClearDesign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x" 
+                       />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/gold_color"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" />
+
+                    <ImageView
+                        android:id="@+id/imgClearEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x" 
+                        android:onClick="processClearEmail"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:textColor="#fff"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" 
+                        android:focusable="false"/>
+
+                    <ImageView
+                        android:id="@+id/imgClearPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x" 
+                        android:onClick="processClearPass"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relConfirPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <com.hitechno.sogoods.views.FuturaEditText
+                        android:id="@+id/textconfirmPw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/champ_email_connexion"
+                        android:cursorVisible="true"
+                        android:hint="@string/confirmPassword"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dp"
+                        android:textColor="#fff"
+                        android:textCursorDrawable="@drawable/cursor_drawable"
+                        sogoods:typeface="futura_std_medium" />
+
+                    <ImageView
+                        android:id="@+id/imgClearConfirmPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="5dp"
+                        android:src="@drawable/bouton_quitter2x" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idrequiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/butmyQuizz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/champ_email_connexion"
+                            android:onClick="processMyQuizz"
+                            android:text="@string/myQuizz"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/imageValidate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/relativeLayout1"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/login_check"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idrefaceb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/fb_logo" />
+
+                    <Button
+                        android:id="@+id/btt_face_shareapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageView_logo"
+                        android:background="@drawable/champ_email_connexion"
+                        android:text="@string/spread_application"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/idrelogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/butLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/champ_email_connexion"
+                        android:text="@string/disconnect"
+                        android:textSize="13sp" 
+                        android:onClick="processLogoutButton"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/search_container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relSearch"
+        android:orientation="vertical" />
+
+    <!-- End -->
+
+</FrameLayout>

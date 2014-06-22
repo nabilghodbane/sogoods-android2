@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" 
+            android:indeterminateDrawable="@drawable/progressbar3">
+        </ProgressBar>
+
+        <GridView
+            android:id="@+id/categories_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:stretchMode="spacingWidthUniform" />
+
+        <LinearLayout
+            android:id="@+id/category_search_container_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/categories_grid_view"
+            android:orientation="vertical" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="@drawable/pager_drop_shadow" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/sideIndex"
+        android:layout_width="40dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/side_index_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

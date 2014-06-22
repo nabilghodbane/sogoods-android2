@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:id="@+id/brand_fragment" android:layout_width="match_parent"
+	android:layout_height="match_parent" 
+	android:orientation="vertical" >
+
+	<ListView android:id="@+id/brand_detail_items"
+		android:layout_width="match_parent" android:layout_height="0dp"
+		android:layout_weight="2" />
+
+	<ImageView android:layout_width="match_parent"
+		
+		android:background="@drawable/pager_drop_shadow"
+		android:contentDescription="@string/access_shadow_image"/>
+
+	<RadioGroup android:id="@+id/brand_buttons"
+		android:layout_width="match_parent" android:layout_height="0dp"
+		android:orientation="horizontal" android:layout_weight="1">
+
+		<com.hitechno.sogoods.views.FuturaToggleButton
+			android:id="@+id/brand_stores_button" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			android:onClick="onBrandFilterClicked" sogoods:typeface="futura_std_medium"
+			 android:textOff="@string/placeholder_stores"
+			android:textOn="@string/placeholder_stores" android:text="@string/placeholder_stores" />
+		<com.hitechno.sogoods.views.FuturaToggleButton
+			android:id="@+id/brand_products_button" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			android:onClick="onBrandFilterClicked" sogoods:typeface="futura_std_medium"
+			 android:textOff="@string/placeholder_products"
+			android:textOn="@string/placeholder_products" android:text="@string/placeholder_products" />
+		<com.hitechno.sogoods.views.FuturaToggleButton
+			android:id="@+id/brand_news_button" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			android:onClick="onBrandFilterClicked" sogoods:typeface="futura_std_medium"
+			 android:textOff="@string/placeholder_news"
+			android:textOn="@string/placeholder_news" android:text="@string/placeholder_news" />
+		<com.hitechno.sogoods.views.FuturaToggleButton
+			android:id="@+id/brand_photos_button" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			android:onClick="onBrandFilterClicked" sogoods:typeface="futura_std_medium"
+			 android:textOff="@string/placeholder_photos"
+			android:textOn="@string/placeholder_photos" android:text="@string/placeholder_photos" />
+		<com.hitechno.sogoods.views.FuturaToggleButton
+			android:id="@+id/brand_catalogs_button" android:layout_width="0dp"
+			android:layout_height="match_parent" android:layout_weight="1"
+			android:onClick="onBrandFilterClicked" sogoods:typeface="futura_std_medium"
+			 android:textOff="@string/placeholder_catalogs"
+			android:textOn="@string/placeholder_catalogs" android:text="@string/placeholder_catalogs" />
+	</RadioGroup>
+	
+	<LinearLayout android:id="@+id/brand_stores_container"
+		android:layout_width="match_parent" android:layout_height="0dp"
+		android:orientation="vertical" android:layout_weight="8" />
+</LinearLayout>

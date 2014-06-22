@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_right_radiobutton_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_gray"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <com.hitechno.sogoods.views.FuturaButton
+            android:id="@+id/menuright_category_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_white_with_line_gray"
+            android:text="@string/categories"
+            android:textColor="@color/support_dark"
+            sogoods:typeface="futura_std_light" />
+
+        <com.hitechno.sogoods.views.FuturaButton
+            android:id="@+id/menuright_brand_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/full_transparent"
+            android:text="@string/brands"
+            android:textColor="@color/support_dark"
+            sogoods:typeface="futura_std_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_product_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_right_radiobutton_layout"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/shadow_namebackground" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navbar" >
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp" >
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bttSkipQuizz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bttNextQuizz"
+                android:layout_alignBottom="@+id/bttNextQuizz"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/add_product_switch2x"
+                android:onClick="processBttSkip"
+                android:text="@string/skipQuizz" />
+
+            <Button
+                android:id="@+id/bttNextQuizz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/add_product_switch2x"
+                android:onClick="processBttNext"
+                android:text="Next" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="132dp"
+                android:gravity="center"
+                android:text="Start a quizz \n 9 questions to determine \n your liftstyle"
+                android:textColor="@color/sogoods_white_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+  <!--   <LinearLayout android:id="@+id/fragment_content_quizz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/> -->
+
+</LinearLayout>

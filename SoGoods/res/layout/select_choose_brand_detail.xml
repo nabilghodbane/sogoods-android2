@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_normal_cell" >
+
+        <ImageView
+            android:id="@+id/imageBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/bg_nopicture_110x110" />
+
+        <com.hitechno.sogoods.views.FuturaTextView
+            android:id="@+id/idtextfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageBrand"
+            android:background="@drawable/selected_leftmenu"
+            android:paddingLeft="15dp"
+            android:textColor="@color/gold_color"
+            sogoods:typeface="futura_std_medium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

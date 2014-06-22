@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hitechno.sogoods.views.FuturaTextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:id="@+id/location" android:layout_width="match_parent"
+	android:layout_height="match_parent" sogoods:typeface="futura_std_medium"
+/>

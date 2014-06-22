@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:id="@+id/like_choices"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/sogoods_gray_color">
+
+	<com.hitechno.sogoods.views.FuturaToggleButton android:layout_marginTop="30dp"
+		android:id="@+id/like_dream" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" sogoods:typeface="futura_std_medium"
+		android:text="@string/likeTypeDream" android:textOn="@string/likeTypeDream"
+		android:textOff="@string/likeTypeDream" android:onClick="onProductLikeChoiceClicked"
+		android:background="@drawable/hover_like" android:layout_gravity="center"
+		android:textColor="@color/sogoods_gray_color" android:textStyle="bold"/>
+	
+	<com.hitechno.sogoods.views.FuturaToggleButton android:layout_marginTop="15dp"
+		android:id="@+id/like_ilike" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" sogoods:typeface="futura_std_medium"
+		android:text="@string/likeTypeLike" android:textOn="@string/likeTypeLike"
+		android:textOff="@string/likeTypeLike" android:onClick="onProductLikeChoiceClicked"
+		android:background="@drawable/hover_like" android:layout_gravity="center"
+		android:textColor="@color/sogoods_gray_color" android:textStyle="bold" />
+	
+	
+	<com.hitechno.sogoods.views.FuturaToggleButton android:layout_marginTop="15dp"
+		android:id="@+id/like_nextpurchase" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" sogoods:typeface="futura_std_medium"
+		android:text="@string/likeTypeNext" android:textOn="@string/likeTypeNext"
+		android:textOff="@string/likeTypeNext" android:onClick="onProductLikeChoiceClicked"
+		android:background="@drawable/hover_like" android:layout_gravity="center" 
+		android:textColor="@color/sogoods_gray_color" android:textStyle="bold"/>
+	
+	<com.hitechno.sogoods.views.FuturaToggleButton  android:layout_marginTop="15dp"
+		android:id="@+id/like_have" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" sogoods:typeface="futura_std_medium"
+		android:text="@string/likeTypeOwned" android:textOn="@string/likeTypeOwned"
+		android:textOff="@string/likeTypeOwned" android:onClick="onProductLikeChoiceClicked" 
+		android:background="@drawable/hover_like" android:layout_gravity="center"
+		android:textColor="@color/sogoods_gray_color" android:textStyle="bold"/>
+
+	<com.hitechno.sogoods.views.FuturaToggleButton android:layout_marginTop="15dp"
+	     android:layout_marginBottom="30dp"
+		android:id="@+id/like_cancel" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" sogoods:typeface="futura_std_medium"
+		android:text="@string/cancel" android:textOn="@string/cancel"
+		android:textOff="@string/cancel" android:onClick="onProductLikeChoiceClicked"
+		android:background="@drawable/hover_like" android:layout_gravity="center" 
+		android:textColor="@color/sogoods_gray_color" android:textStyle="bold"/>
+</RadioGroup>

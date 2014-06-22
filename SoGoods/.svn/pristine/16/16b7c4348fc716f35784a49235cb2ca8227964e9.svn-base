@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FuturaTextView">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <attr name="typeface" format="enum">
+        <enum name="futura_std_bold" value="0" />
+        <enum name="futura_std_bold_oblique" value="1" />
+        <enum name="futura_std_book" value="2" />
+        <enum name="futura_std_book_oblique" value="3" />
+        <enum name="futura_std_heavy" value="4" />
+        <enum name="futura_std_heavy_oblique" value="5" />
+        <enum name="futura_std_light" value="6" />
+        <enum name="futura_std_medium" value="7" />
+        <enum name="futura_std_medium_oblique" value="8" />
+    </attr>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="customFont" format="string" />
+    </declare-styleable>
+
+</resources>

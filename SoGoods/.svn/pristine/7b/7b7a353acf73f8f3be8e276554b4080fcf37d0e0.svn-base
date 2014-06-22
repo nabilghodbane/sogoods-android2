@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="soGoods">So Goods</string>
+
+    <!-- misc -->
+    <string name="brand">Brand</string>
+    <string name="shop">Shop</string>
+    <string name="shops">Shops</string>
+    <string name="brands">Brands</string>
+    <string name="users">Users</string>
+    <string name="product">Product</string>
+    <string name="close">Close</string>
+    <!-- "noResult"                          =   "No result.</string> -->
+    <string name="noResultForSearch">No result matches your search terms.</string>
+    <string name="noContent">No Content for this section at the moment.</string>
+    <string name="noComment">Still not comments yet. Be the first one to give your opinion !</string>
+    <string name="error">Error</string>
+
+    <!-- //Login related -->
+    <string name="demoTitle">Demo</string>
+    <string name="email">Email</string>
+    <string name="yourEmail">Your email address :</string>
+    <string name="password">Password</string>
+    <string name="signUp">Sign up</string>
+    <string name="logIn">Log In</string>
+    <string name="new_account">Create Account</string>
+    <string name="signUpViaFacebook">Use Your Facebook Infos</string>
+    <string name="signUpViaTwitter">Use Your Twitter Infos</string>
+    <string name="validateTitle">Confirm</string>
+    <string name="confirmPassword">Please confirm your password</string>
+    <string name="confirmPass">Password confirmation</string>
+    <string name="Connection">Connection</string>
+    <string name="enterUsernameOrPassword">Enter username and password</string>
+    <string name="OK">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="or">or</string>
+    <string name="emailNotCorrect">The format of your email is not correct</string>
+    <string name="PasswordsNotIdentical">Passwords do not match</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="expired_session">Your session has expired</string>
+    <string name="lost_connection">You don’t have Internet connection.</string>
+    <string name="email_used">Email already used</string>
+    <string name="resetPasswordMessage">Password will be sent to your email</string>
+    <string name="sendNewPassword">You’ll receive an email from Sogoods to get your log in and password back</string>
+
+    <!-- //Home related -->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="notification_zone">Notification area</string>
+    <string name="notifications">Notifications</string>
+    <string name="pull_down_refresh">Pull to refresh</string>
+    <string name="refreshing">Updating...</string>
+    <string name="release_refresh">Release to refresh</string>
+    <string name="last_update">Last update: </string>
+    <!-- //"findBrandOrProDuct"                =   "Brand, product, member, shop</string> -->
+    <string name="findBrandOrProDuct">Search</string>
+    <string name="findBrandProductMember">Look for a news</string>
+    <string name="findCity">Search for a city</string>
+    <string name="homeCategories">Categories</string>
+    <string name="newMembers">Members</string>
+    <string name="newProducts">Products</string>
+    <string name="advertisement">Advertising space</string>
+    <string name="myEvents">My news</string>
+    <string name="allEvents">All the news</string>
+    <!-- //"no_news"                           =   "There is no news corresponding to your lifestyle</string> -->
+    <string name="no_news">No news matching to your lifestyle</string>
+    <!-- //"no_news_brand"                     =   "There is no news about this brand</string> -->
+    <string name="no_news_brand">No news about this brand</string>
+    <string name="old_notifs">Old notifications</string>
+    <string name="new_notifs">New notifications</string>
+    <string name="more_news">More news</string>
+    <string name="suggested">Suggested</string>
+    <string name="new_products">New</string>
+    <string name="popular">Popular</string>
+    <string name="homeSettings">Settings</string>
+    <string name="options">Options</string>
+    <string name="allCategories">All categories</string>
+    <string name="allBrands">All brands</string>
+    <string name="brandsAvailable">%i brands available</string>
+    <string name="brandAvailable">%i brand available</string>
+    <string name="concierge">Concierge service</string>
+    <string name="timetable">Timetable</string>
+    <string name="filter">Filter</string>
+    <string name="notice">Notice</string>
+    <string name="no_product_for_search">No products available for the current search.</string>
+    <string name="newsSearchList">News search list</string>
+    <string name="createNewAccount">you want to create an account?</string>
+    <string name="forgotPassword">you having difficulties logging in?</string>
+    <string name="forgotPassMes">Forgot your log in or password?</string>
+
+    <!-- // Pop up related -->
+    <string name="photoGallery">Photo galleries</string>
+    <string name="gallery">Gallery</string>
+    <string name="personalInfo">My account</string>
+    <string name="addBrand">Add a brand</string>
+    <string name="disconnect">Log out</string>
+    <string name="confirm_disconnection">Do you want to log out ?</string>
+    <string name="post">Post</string>
+
+    <!-- // Brand related -->
+    <string name="viewFans">View fans</string>
+    <string name="become_fan">Become fan</string>
+    <string name="already_fan">Already fan</string>
+    <string name="stopFan">Stop fan</string>
+    <string name="selectBrand">Select a brand</string>
+    <string name="selectBrandOf">Select a brand of</string>
+
+    <!-- Shop related -->
+    <string name="products">Products</string>
+    <string name="catalog">Catalog</string>
+    <string name="catalogs">"Catalogs</string>
+    <string name="news">News</string>
+    <string name="photos">Pictures</string>
+    <string name="mail_shop">Email the shop</string>
+    <string name="share_shop">Share</string>
+    <string name="share_mail">Share by mail</string>
+    <string name="share_msg">Share by message</string>
+    <string name="searching_shops">Looking for shops...</string>
+    <string name="configure_mail">Please configure your email in your device settings</string>
+    <string name="configure_message">Please configure Messages in your device settings</string>
+    <string name="your_location">Your location</string>
+    <string name="not_found">Not found</string>
+    <string name="location_not_found">Location not found</string>
+
+    <!-- //Profile related -->
+    <string name="so">SO</string>
+    <string name="so_s">SO</string>
+    <string name="other_so">%i+ other SO</string>
+    <string name="n_so">%i SO</string>
+    <string name="like">LIKES</string>
+    <string name="like_s">Like</string>
+    <string name="like_gs">Like</string>
+    <string name="comment">Comment</string>
+    <string name="follower">Follower</string>
+    <string name="follower_s">Followers</string>
+    <string name="following">Following</string>
+    <string name="following_s">Followings</string>
+    <string name="fan_s">Fans</string>
+    <string name="fan">Fan</string>
+    <string name="followers_nb">Followers</string>
+    <string name="following_nb">Followings</string>
+    <string name="likes_nb">Likes</string>
+    <string name="fan_nb">Fan</string>
+    <string name="my_own_profile">My profile</string>
+    <string name="my_profile">My Account</string>
+    <string name="create_profile">Profile creation</string>
+    <string name="my_diary">My diary</string>
+    <string name="editProfile">Edit my profile</string>
+    <string name="toSave">Save</string>
+    <string name="photo">Picture</string>
+    <string name="next">Next</string>
+    <string name="addProduct">+ Add a product</string>
+    <string name="addProductNavBar">Add a product</string>
+    <string name="profileNiv">Your profile is completed at</string>
+    <string name="completeProfile">Please complete your profile</string>
+    <string name="confiramtionPassNotCorrect"></string>
+    <string name="viewAlbum">View album</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="affinity">Affinity</string>
+    <string name="subscribe">Follow</string>
+    <string name="subscribed">Followed</string>
+    <string name="loadMore">Load more</string>
+    <string name="fieldsNotFilled">Please fill every field and choose a profile picture</string>
+    <string name="firstname">First name (between 2 and 15 characters)</string>
+    <string name="lastname">Last name (between 2 and 15 characters)</string>
+    <string name="pseudo">Username (between 4 and 15 characters)</string>
+    <string name="firstNameValidation">First name must between 2 and 15 characters</string>
+    <string name="lastNameValidation">Last name must between 2 and 15 characters</string>
+    <string name="pseudoValidation">Username must between 4 and 15 characters</string>
+    <string name="alphabetOnlyFistName">First name must be alphabetic characters only</string>
+    <string name="alphabetOnlyLastName">Last name must be alphabetic characters only</string>
+    <string name="minimumPassword">Password must be minimum 4 characters</string>
+    <string name="user">Member</string>
+    <string name="birthdate">Date of birth</string>
+    <string name="sex">Title</string>
+    <string name="miss">Miss</string>
+    <string name="madam">Madam</string>
+    <string name="mister">Mister</string>
+    <string name="activity">Activity</string>
+    <string name="cityOrCountry">City or Country</string>
+    <string name="updateSucceed">Update completed</string>
+    <string name="updateFailed">Failed update</string>
+    <string name="facebook_share_sentence">Discover Sogoods App</string>
+    <string name="elapsed_seconds"> seconds ago</string>
+    <string name="elapsed_minutes"> minute(s) ago</string>
+    <string name="elapsed_hours"> hour(s) ago</string>
+    <string name="elapsed_days"> day(s) ago</string>
+    <string name="elapsed_weeks"> week(s) ago</string>
+    <string name="elapsed_months"> month(s) ago</string>
+    <string name="elapsed_years"> year(s) ago</string>
+    <string name="years">years</string>
+    <string name="move_picture_large">Move your picture inside the canvas for your profile picture</string>
+    <string name="move_picture_small">Move your picture inside the canvas for your comments picture</string>
+    <string name="your_large_picture">Your profile picture</string>
+    <string name="your_small_picture">Your miniature profile picture as seen in comments</string>
+    <string name="no_followers">You have no follower for the moment</string>
+    <string name="profile_preview">Your profile’s preview</string>
+    <string name="city_search_placeholder">Please enter a city name</string>
+    <string name="suggested_no_following">You haven’t selected any following yet.\nClick here to find some.</string>
+    <string name="suggested_no_follower">You don’t have any follower yet.</string>
+    <string name="suggested_no_like">You haven’t liked any product yet.\nClick here to add some.</string>
+    <string name="suggested_no_fan">You haven’t added any favorite brand.\nClick here to add some.</string>
+    <string name="no_picture_yet">This member has no picture yet.</string>
+    <string name="spread_application">Share the application</string>
+    <string name="addPhotoGallery">Add photo to gallery</string>
+    <string name="selectPhoto">Select a photo</string>
+    <string name="setSquardImage">Set up square profile image</string>
+    <string name="setProfileImage">Profile photo</string>
+    <string name="largImageProfile">Large image profile</string>
+    <string name="squareImageProfile">Square image profile</string>
+    <string name="showRealName">Show real name</string>
+    <string name="showBirthday">Show date of birth</string>
+
+    <!-- //Product related -->
+
+    <string name="likeTypeDream">Dream</string>
+    <string name="likeTypeNext">Next purchase</string>
+    <string name="likeTypeOwned">I’ve got it</string>
+    <string name="likeTypeLike">I like</string>
+    <string name="I_DREAM">Dream</string>
+    <string name="GOT_IT">Next purchase</string>
+    <string name="NEXT_BUY">I’ve got it</string>
+    <string name="LIKE_IT">I like</string>
+    <string name="report_abuse">Report abuse</string>
+    <string name="report_successful">Thank you for you report</string>
+    <string name="report_failed">The report failed, please try again</string>
+    <string name="initialComment">Description ... </string>
+    <string name="initialMessageRepport">Report abuse</string>
+    <string name="searchViaGoogle">Find with Google</string>
+    <string name="use">Use</string>
+    <string name="publish">Post</string>
+    <string name="veuillezRemplirLesDeuxChamps">Please fill both fields</string>
+    <string name="veuillezChoisirUnePhoto">Please add a picture</string>
+    <string name="veuillezChoisirUneCategorie">Please select a category</string>
+    <string name="veuillezChoisirUneMarque">Please select a brand</string>
+    <string name="veuillezChoisirUnNomDeProduit">Please select a product name</string>
+    <string name="product_name_brand">Product name and Brand</string>
+    <string name="product_from_brand">from </string>
+    <string name="added_by">Added by </string>
+    <string name="added_by_on">Added by  on </string>
+    <string name="added_success">You successfully added a product.</string>
+    <string name="productInBrand">Products of</string>
+    <string name="likeList">’s like list</string>
+
+    <!-- // comoment related -->
+    <string name="updateComment">Update comment</string>
+    <string name="putComment">Put your comment here!</string>
+
+    <!-- //Category related -->
+    <string name="aroundMe">Around me</string>
+    <string name="elsewhere">Elsewhere</string>
+
+    <!-- //Brand related -->
+    <string name="list">  List</string>
+    <string name="map">  Map</string>
+    <string name="searchBrand">Search a brand</string>
+    <string name="requestedLocation">Requested location</string>
+    <string name="tradeShop">Trades</string>
+    <string name="retailerShop">Retailers</string>
+    <string name="resultsInRadius">Results in a x km perimeter</string>
+    <string name="searchBrandLike">Choose a brand</string>
+    <string name="chooseBrands">Choose brands you like</string>
+    <string name="noShopResult">There’s no any shop nears you</string>
+    <string name="brandAdded">New brand added successfully to your Fans list.</string>
+
+    <!-- // Add product -->
+    <string name="selectTheProductCategory">Select the product category</string>
+    <string name="createProduct">Create</string>
+    <string name="productName">Product name</string>
+    <!-- //added by Huu Nam -->
+    <string name="productDes">Product description</string>
+    <!-- // -->
+    <string name="brandName">Brand</string>
+    <string name="categoryTitle">Category</string>
+    <string name="veuillezLaisserUnCommentaire">Please leave a comment</string>
+    <string name="categoryNotMatchingBrand">The selected brand do not match the category.</string>
+    <string name="selectPhoto">Select a photo</string>
+    <string name="editPhotoProduct">Edit photo</string>
+
+    <!-- //MISC -->
+    <string name="menu">Menu</string>
+    <string name="back">Back</string>
+    <string name="noResult">No Results</string>
+    <string name="noSearchingResult">No result found</string>
+    <string name="notFound">Not found</string>
+
+    <!-- // Quiz Page -->
+    <!-- //"questionTest"                      =   "Vos vacances sont plutôt: -->
+    <string name="questionTest">A supprimer:</string>
+    <!-- // QuizResult Page -->
+    <!-- //"thanksForParticipation"            =   "Merci pour votre participation \n Vous avez le même lifestyle que %d members</string> -->
+    <!-- //"thanksForParticipation"            =   "Thanks for your participation \n x% of members share your lifestyle</string> -->
+    <string name="thanksForParticipation">Thanks for your participation</string>
+    <string name="myQuizz">My quizz</string>
+    <string name="startQuizz">Start a quizz</string>
+    <string name="next">Next </string>
+    <string name="skipQuizz">Skip  </string>
+    <string name="numberLabel">You selected %i brand</string>
+    <string name="numberLabels">You selected %i brands</string>
+    <string name="errorQuizz">Problem with internet connection, we’ll remind you about this qizz later</string>
+    <string name="errorConnect">Error in connection</string>
+    <string name="finish">Finish</string>
+    <string name="quizzAgain">You didn’t participate to the quiz. Would you like to do it ?</string>
+    <string name="didChooseAnswer">You didn’t choose any answer</string>
+    <string name="forgetAnswer">You must answer question %i</string>
+
+    <!-- // Camera -->
+    <string name="takePicture">Take a picture</string>
+    <string name="choosePicture">Choose a picture</string>
+    <string name="select">Choose</string>
+    <string name="skip">Skip</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- // Gallery Photo Page -->
+    <string name="edition">Edit</string>
+    <string name="delete">Delete</string>
+    <!-- //"addPicture"                        =   "+ Add a picture -->
+    <string name="addPicture">+ Add</string>
+    <string name="addPictureLine2">a picture</string>
+	
+    <string name="support">Support</string>
+    <!--
+//added by Huu Nam for delete a profile photo in profile
+//added april - 24 -2013
+    -->
+    <string name="added_new_comment">added new comment</string>
+    <string name="followed_you">followed you</string>
+    <string name="added_new_product">added new product</string>
+    <string name="there_is">There is</string>
+    <string name="new_comment_on_your_product">new comment on your product</string>
+    <string name="added_new_picture">added new picture</string>
+    <string name="deleteTitle">Question</string>
+    <string name="deleteQuetstion">Are you sure to delete this picture ?</string>
+    <string name="storeLocator">Store locator</string>
+    <string name="sport">Sport</string>
+    <string name="stylish">Stylish</string>
+    <string name="designer">Designer</string>
+    <string name="student">Student</string>
+    <string name="select_member">Select the members you want to follow</string>
+    <string name="email_exist">Le serveur indisponible, veuillez réessayer dans un moment</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">CameraSogoods</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the application to stop. Please help me fix this by sending us error data, all you have to do is click \'OK\'.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_notif_ticker_text">Unexpected error, please send a report...</string>
+    <string name="crash_notif_title">Feather crashed...</string>
+    <string name="crash_notif_text">Please click here to help fix the issue.</string>
+    <string name="launch_editor">Launch Editor</string>
+    <string name="choose_photo">Choose a Photo</string>
+    <string name="external_storage_na_title">Attention</string>
+    <string name="external_storage_na_message">sdcard is missing or currently not mounted. Cannot continue.</string>
+    <string name="get_mobile_library">Get Android Library</string>
+    <string name="view_documentation">View Documentation</string>
+    <string name="hi_res_service_label">HI-RES Service</string>
+    <string name="crash_toast_text">Ooooops! I crashed, but a report has been sent to my developer to help him fix the issue!</string>
+    <string name="image_details">Image Details</string>
+
+</resources>

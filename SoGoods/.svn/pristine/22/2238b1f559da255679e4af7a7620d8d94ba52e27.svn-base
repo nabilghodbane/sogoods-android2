@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sogoods="http://schemas.android.com/apk/res/com.hitechno.sogoods"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+ 	<FrameLayout android:id="@+id/pager_with_filter"
+		android:layout_width="match_parent" android:layout_height="wrap_content"> 
+		 <RadioGroup android:id="@+id/profiles_filter"
+			android:layout_width="match_parent" android:layout_height="wrap_content" 
+			android:background="@drawable/shadow_namebackground"
+			android:orientation="horizontal" >
+
+			<com.hitechno.sogoods.views.FuturaToggleButton
+				android:id="@+id/new_profiles_button" 
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="@string/new_filter"
+				android:textOn="@string/new_filter"
+				android:textOff="@string/new_filter"
+				android:onClick="onProfileFilterClicked"
+				sogoods:typeface="futura_std_medium" 
+				android:textColor="@color/light_gold_color"/>
+			<com.hitechno.sogoods.views.FuturaToggleButton
+				android:id="@+id/suggested_profiles_button" 
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="@string/suggested"
+				android:textOn="@string/suggested" 
+				android:textOff="@string/suggested"
+				android:onClick="onProfileFilterClicked"
+				sogoods:typeface="futura_std_medium" 
+				/>
+			<com.hitechno.sogoods.views.FuturaToggleButton
+				android:id="@+id/popular_profiles_button" 
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:text="@string/popular" 
+				android:textOn="@string/popular"
+				android:textOff="@string/popular"
+				android:onClick="onProfileFilterClicked"
+				sogoods:typeface="futura_std_medium" 
+				 />
+		</RadioGroup> 
+		
+
+<!-- 		<ImageView android:layout_width="match_parent"
+			android:layout_height="@dimen/pager_title_strip_shadow_extent"
+			android:background="@drawable/pager_drop_shadow" android:contentDescription="@string/access_shadow_image" /> -->
+		
+	</FrameLayout>
+<!-- 
+	<GridView android:id="@+id/profiles_grid_view"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:layout_below="@id/pager_with_filter" /> -->
+
+	<LinearLayout android:id="@+id/profile_container_fragment"
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:orientation="vertical" android:layout_below="@id/pager_with_filter"/>
+</RelativeLayout>

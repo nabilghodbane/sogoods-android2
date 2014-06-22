@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/my_profile_menu">
+	<item android:id="@+id/add_products" android:title="@string/add_products"
+		android:showAsAction="ifRoom" />
+	<!--
+	<item android:id="@+id/add_brand" android:title="@string/add_brand"
+		android:showAsAction="ifRoom" />
+	 -->
+	<item android:id="@+id/my_account" android:title="@string/my_account"
+		android:showAsAction="collapseActionView" />
+	<item android:id="@+id/sign_out" android:title="@string/sign_out"
+		android:showAsAction="collapseActionView" />
+</menu>
